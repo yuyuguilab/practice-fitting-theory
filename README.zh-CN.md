@@ -4,8 +4,7 @@
 
 *Yugui Yu · YYG Strategy Lab · they4897@gmail.com*
 
-**[阅读论文（PDF）](paper.pdf) · [LaTeX 源码](paper.tex) · [图件](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)**
-<!-- TODO(user): 发布时将 10.5281/zenodo.XXXXXXX 替换为 Zenodo 分配的 DOI（上方两处 + 下方引用块 + README.md） -->
+**[阅读论文（PDF）](paper.pdf) · [LaTeX 源码](paper.tex) · [图件](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)**
 
 ## 理论一句话
 
@@ -58,7 +57,7 @@ tectonic paper.tex                 # 重新编译 PDF（需 references.bib + fig
 
 ## 引用
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)
 
 ```bibtex
 @article{yu2026practicefitting,
@@ -67,7 +66,7 @@ tectonic paper.tex                 # 重新编译 PDF（需 references.bib + fig
   journal = {YYG Strategy Lab, preprint},
   year    = {2026},
   month   = {10},
-  doi     = {10.5281/zenodo.XXXXXXX},
+  doi     = {10.5281/zenodo.23391808},
   url     = {https://github.com/yuyuguilab/practice-fitting-theory}
 }
 ```

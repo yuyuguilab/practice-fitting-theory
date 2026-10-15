@@ -4,8 +4,7 @@
 
 *Yugui Yu · YYG Strategy Lab · they4897@gmail.com*
 
-**[Read the paper (PDF)](paper.pdf) · [LaTeX source](paper.tex) · [Figures](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)**
-<!-- TODO(user): replace 10.5281/zenodo.XXXXXXX with the Zenodo DOI assigned at release (two occurrences above + Citation block below + README.zh-CN.md) -->
+**[Read the paper (PDF)](paper.pdf) · [LaTeX source](paper.tex) · [Figures](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)**
 
 ## The theory in one sentence
 
@@ -59,7 +58,7 @@ Every coding decision in `analysis/coding_data.py` carries its supporting quotat
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)
 
 ```bibtex
 @article{yu2026practicefitting,
@@ -68,7 +67,7 @@ Every coding decision in `analysis/coding_data.py` carries its supporting quotat
   journal = {YYG Strategy Lab, preprint},
   year    = {2026},
   month   = {10},
-  doi     = {10.5281/zenodo.XXXXXXX},
+  doi     = {10.5281/zenodo.23391808},
   url     = {https://github.com/yuyuguilab/practice-fitting-theory}
 }
 ```
