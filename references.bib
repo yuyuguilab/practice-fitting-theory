@@ -1,0 +1,837 @@
+% references.bib — companion to 04_manuscript.md (Paper 2, "Fitting the Practice, Not the Works")
+% In-text numbered citations [1]–[79] map to entries BELOW IN ORDER (use unsrtnat = order of first citation;
+% the order has been machine-verified to match first-appearance order in the manuscript).
+%
+% Provenance notes:
+%   - All anchors verified against analysis/corpus_v1.csv (corpus v1.0, N = 80) and the verification log in
+%     03_analysis_report.md §2.3; four "to-lock" items were additionally verified by search on 2026-10-14
+%     (Sticker title; Zhou et al. WEIRD author list; Anthropic emotions title = arXiv:2604.07729;
+%     Fenoglio = author of arXiv:2607.28137) plus Agent-Dice and D-FUSEr/EDAS author lists.
+%   - SUBMISSION-PREPARER VERIFICATION ROUND (2026-10-14, first-party sources): all 8 to-lock items
+%     confirmed and corrected against arXiv abstract pages / Springer / ICML records —
+%     (1) Sticker: Philos. & Technol. 39(2), Article 90, published 2026-05-01 (Commentary, open access);
+%     (2) WEIRD: authors Zhou/Constantinides/Quercia confirmed on arxiv.org/abs/2508.19269;
+%     (3) Anthropic emotions: title confirmed (transformer-circuits 2026-04-02; arXiv v1 2026-04-09);
+%     (4) Spectrum Tuning authors: CORRECTED "Park, Cyrus" -> "Park, Chan" and "Fisher, Jared" ->
+%     "Fisher, Jillian" per arxiv.org/abs/2510.06084 (ICLR 2026 confirmed in arXiv comments field);
+%     (5) Agent-Dice: full 8-author list completed per arxiv.org/abs/2601.03641; venue Findings of ACL
+%     2026 added (aclanthology.org/2026.findings-acl.908);
+%     (6) D-FUSEr: ICML 2026 poster confirmed (PMLR 306); "Baek, David" -> "Baek, David D.";
+%     "Taufiq, Muhammad Faaiz" -> "Faaiz, Muhammad" per ICML 2026 record;
+%     (7) EDAS: full 11-author list completed per arxiv.org/abs/2605.17333;
+%     (8) Fenoglio: author/title/abstract confirmed on arxiv.org/abs/2607.28137.
+%   - Corrections executed relative to upstream drafts: Korinek & Stiglitz NOT cited (arXiv:2412.18593 is
+%     Shoresh & Loewenstein, "Modeling the Centaur"); Aya dataset cited with 65 languages (never 117);
+%     Spectrum Tuning cited as ICLR 2026 with Yejin Choi in the author list (arXiv comments field);
+%     Collective Constitutional AI venue corrected to ACM FAccT 2024; Plessner English translation is the
+%     2019 Fordham UP edition (trans. Millay Hyatt) — no 2024 retranslation exists; The Coming Wave
+%     co-author corrected to Michael Bhaskar (upstream drafts said Hoffman).
+%   - Where corpus author lists were truncated ("et al."), entries carry initials + "and others" with a
+%     "per arXiv/journal record" note rather than guessed full names; no DOIs are asserted beyond those
+%     present in corpus_v1.csv or verified this session.
+%   - Falsification-warning list (7 items) screened: none of the banned claims appears in manuscript or bib.
+%   - Author-list policy: full lists up to ~10 authors; for mega-author corporate reports (Llama 3,
+%     DeepSeek, AlphaEvolve, FunSearch, hivemind, etc.) the first authors plus "and others" per the
+%     primary sources' own citation practice; post-2025 arXiv items follow the arXiv record.
+%   - Entry [5] (companion audit paper) is cited for continuity but excluded from
+%     evidence-map statistics (anti-self-citation rule).
+%   - Concurrent works: entries [37] Gharbi and [67] Fenoglio are demarcated in the manuscript (concurrent-work rule).
+
+% ---------- [1] ----------
+@misc{villalobos2022data,
+  author       = {Villalobos, Pablo and Sevilla, Jaime and Ho, Lennart and Barrett, David and Besiroglu, Tamay},
+  title        = {Will we run out of data? {L}imits of {LLM} scaling based on projected dataset size sequences},
+  year         = {2022},
+  eprint       = {2211.04325},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [2] ----------
+@misc{grattafiori2024llama3,
+  author       = {Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and others},
+  title        = {The {Llama 3} herd of models},
+  year         = {2024},
+  eprint       = {2407.21783},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [3] ----------
+@article{shumailov2024collapse,
+  author  = {Shumailov, Ilia and Shumaylov, Zakhar and Zhao, Yiren and Papernot, Nicolas and Anderson, Ross and Gal, Yarin},
+  title   = {{AI} models collapse when trained on recursively generated data},
+  journal = {Nature},
+  volume  = {631},
+  pages   = {755--759},
+  year    = {2024},
+  doi     = {10.1038/s41586-024-07566-y},
+}
+
+% ---------- [4] ----------
+@book{arendt1958human,
+  author    = {Arendt, Hannah},
+  title     = {The Human Condition},
+  publisher = {University of Chicago Press},
+  year      = {1958},
+  note      = {Labor/work/action tripartition: the philosophical skeleton of the temporal clause.}
+}
+
+% ---------- [5] ----------
+@misc{yu2026failure,
+  author       = {Yu, Yugui},
+  title        = {Success provides direction, failure provides precision: {A} structured audit of failure data in {LLM} training},
+  year         = {2026},
+  doi          = {10.5281/zenodo.23355929},
+  howpublished = {Zenodo},
+  note         = {Companion audit paper; excluded from evidence-map statistics}
+}
+
+% ---------- [6] ----------
+@article{farrell2025cultural,
+  author  = {Farrell, Justin and Gopnik, Alison and Shalizi, Cosma Rohilla and Evans, James},
+  title   = {Large {AI} models are cultural and social technologies},
+  journal = {Science},
+  volume  = {387},
+  year    = {2025},
+  doi     = {10.1126/science.adt9819},
+}
+
+% ---------- [7] ----------
+@book{vallor2024mirror,
+  author    = {Vallor, Shannon},
+  title     = {The {AI} Mirror: How to Reclaim Our Humanity in an Age of Machine Thinking},
+  publisher = {Oxford University Press},
+  year      = {2024},
+  isbn      = {9780197759066},
+}
+
+% ---------- [8] ----------
+@article{brynjolfsson2022turing,
+  author  = {Brynjolfsson, Erik},
+  title   = {The {Turing} trap: Can the economy grow rapidly after the automation of labor?},
+  journal = {D{\ae}dalus},
+  volume  = {151},
+  number  = {2},
+  pages   = {250--260},
+  year    = {2022},
+  doi     = {10.1162/daed\_a\_01887},
+  eprint  = {2201.04200},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [9] ----------
+@article{gabriel2020values,
+  author  = {Gabriel, Iason},
+  title   = {Artificial intelligence, values, and alignment},
+  journal = {Minds \& Machines},
+  volume  = {30},
+  pages   = {411--437},
+  year    = {2020},
+  doi     = {10.1007/s11023-020-09539-2},
+}
+
+% ---------- [10] ----------
+@misc{salaudeen2025measurement,
+  author       = {Salaudeen, Ola and Reuel, Anka and Ahmed, Aakash and Bedi, Saad and Robertson, Zack and Sundar, Siva and Domingue, Brian and Wang, Alex and Koyejo, Sanmi},
+  title        = {Measurement to meaning: {A} validity-centered framework for {AI} evaluation},
+  year         = {2025},
+  eprint       = {2505.10573},
+  archivePrefix = {arXiv},
+  note         = {Construct validity for AI evaluation; metrological critique anchor.}
+}
+
+% ---------- [11] ----------
+@misc{legg2007universal,
+  author       = {Legg, Shane and Hutter, Marcus},
+  title        = {Universal intelligence: {A} definition of machine intelligence},
+  year         = {2007},
+  eprint       = {0712.3329},
+  archivePrefix = {arXiv}
+}
+
+% ---------- [12] ----------
+@misc{morris2023levels,
+  author       = {Morris, J. R. and Sohl-Dickstein, J. and Fiedel, N. and others},
+  title        = {Levels of {AGI}: {O}perationalizing progress on the path to {AGI}},
+  year         = {2023},
+  eprint       = {2311.02462},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [13] ----------
+@misc{kwa2025measuring,
+  author       = {Kwa, J. and Le, S. and Zhang, D. and others},
+  title        = {Measuring {AI} ability to complete long tasks},
+  year         = {2025},
+  eprint       = {2503.14499},
+  archivePrefix = {arXiv},
+  note         = {METR. Task-horizon doubling ~every 7 months.}
+}
+
+% ---------- [14] ----------
+@article{ilic2024evidence,
+  author  = {Ili{\'c}, D. and others},
+  title   = {Evidence of interrelated cognitive-like capabilities in large language models},
+  journal = {Intelligence},
+  year    = {2024},
+  eprint  = {2310.11616},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [15] ----------
+@article{gignac2025psychometrically,
+  author  = {Gignac, Gilles E.},
+  title   = {Psychometrically derived 60-question benchmarks for large language model evaluation},
+  journal = {Intelligence},
+  volume  = {110},
+  year    = {2025},
+  note    = {Intelligence S016028962500025X (PII).}
+}
+
+% ---------- [16] ----------
+@misc{tesler1997effect,
+  author       = {Tesler, Larry},
+  title        = {The {AI} effect [essay]},
+  year         = {1997},
+  howpublished = {nomodes.com},
+  url          = {https://nomodes.com/},
+  note         = {Tesler's theorem: ``Intelligence is whatever machines haven't done yet.'' Moving-target anchor.}
+}
+
+% ---------- [17] ----------
+@misc{imeri2025benefits,
+  author       = {Imeri, Besim},
+  title        = {The benefits of {AI} and the illusion of {AGI}},
+  year         = {2025},
+  howpublished = {Self-archived essay, ResearchGate},
+  url          = {https://www.researchgate.net/publication/395098367\_The\_benefits\_of\_AI\_and\_the\_Illusion\_of\_AGI},
+  note         = {收录边缘；低置信}
+}
+
+% ---------- [18] ----------
+@misc{nguyen2026rigor,
+  author       = {Nguyen, Timothy},
+  title        = {The role of rigor in artificial intelligence},
+  year         = {2026},
+  eprint       = {2607.03634},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [19] ----------
+@book{plessner1928levels,
+  author    = {Plessner, Helmuth},
+  title     = {Levels of Organic Life and the Human: An Introduction to Philosophical Anthropology},
+  translator = {Hyatt, Millay},
+  publisher = {Fordham University Press},
+  year      = {2019},
+  note      = {German original \emph{Die Stufen des Organischen und der Mensch} (1928). Law of natural artificiality. Upstream's ``2024 English translation'' not found; the 2019 Fordham translation is the verifiable edition (this session's verification).}
+}
+
+% ---------- [20] ----------
+@incollection{demul2014philosophical,
+  author    = {de Mul, Jos},
+  title     = {Philosophical anthropology 2.0: {R}eading {Plessner} in the age of media},
+  booktitle = {Plessner's Philosophical Anthropology: Perspectives and Prospects},
+  editor    = {de Mul, Jos},
+  publisher = {Amsterdam University Press},
+  year      = {2014},
+  doi       = {10.1515/9789048522989-027},
+  note      = {Chapter 26; open-access reissue 2025.}
+}
+
+% ---------- [21] ----------
+@article{tamborini2025homo,
+  author  = {Tamborini, Marco},
+  title   = {Homo translator: {C}oncretizing the human-in-the-loop in bio-inspired technologies},
+  journal = {Topoi},
+  year    = {2025},
+  doi     = {10.1007/s11245-025-10208-1}
+}
+
+% ---------- [22] ----------
+@article{yiu2024transmission,
+  author  = {Yiu, E. and Kosoy, E. and Gopnik, A.},
+  title   = {Transmission versus truth, imitation versus innovation: {W}hat children can do that large language and vision-language models cannot (yet)},
+  journal = {Perspectives on Psychological Science},
+  year    = {2024},
+  eprint  = {2305.07666},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [23] ----------
+@article{webb2023emergent,
+  author  = {Webb, Taylor and Holyoak, Keith J. and Lu, Hongjing},
+  title   = {Emergent analogical reasoning in large language models},
+  journal = {Nature Human Behaviour},
+  volume  = {7},
+  pages   = {1526--1541},
+  year    = {2023},
+  doi     = {10.1038/s41562-023-01759-x},
+  eprint  = {2212.09196},
+  archivePrefix = {arXiv}
+}
+
+% ---------- [24] ----------
+@article{lehr2025kernels,
+  author  = {Lehr, Selin A. and Saichandran, Kexin and Harmon-Jones, Eddie and Vitali, Nicholas and Banaji, Mahzarin R.},
+  title   = {Kernels of selfhood: {GPT-4o} shows humanlike patterns of cognitive dissonance moderated by free choice},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {122},
+  number  = {35},
+  year    = {2025},
+  doi     = {10.1073/pnas.2501823122}
+}
+
+% ---------- [25] ----------
+@article{hu2025generative,
+  author  = {Hu, T. and others},
+  title   = {Generative language models exhibit social identity biases},
+  journal = {Nature Machine Intelligence},
+  volume  = {7},
+  year    = {2025},
+  doi     = {10.1038/s43588-024-00741-1},
+  note    = {Online 2024-12-12; author list per journal record (University of Cambridge).}
+}
+
+% ---------- [26] ----------
+@misc{anthropic2026emotions,
+  author       = {{Anthropic}},
+  title        = {Emotion concepts and their function in a large language model},
+  year         = {2026},
+  eprint       = {2604.07729},
+  archivePrefix = {arXiv},
+  howpublished = {Transformer Circuits},
+  url          = {https://transformer-circuits.pub/2026/emotions},
+}
+
+% ---------- [27] ----------
+@inproceedings{hadfield2016cooperative,
+  author    = {Hadfield-Menell, Dylan and Russell, Stuart and Abbeel, Pieter and Dragan, Anca},
+  title     = {Cooperative inverse reinforcement learning},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2016},
+  eprint    = {1606.03137},
+  archivePrefix = {arXiv}
+}
+
+% ---------- [28] ----------
+@inproceedings{christiano2017deep,
+  author    = {Christiano, Paul F. and Leike, Jan and Brown, Tom and Martic, Miljan and Legg, Shane and Amodei, Dario},
+  title     = {Deep reinforcement learning from human preferences},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2017},
+  eprint    = {1706.03741},
+  archivePrefix = {arXiv}
+}
+
+% ---------- [29] ----------
+@inproceedings{ouyang2022training,
+  author    = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and others},
+  title     = {Training language models to follow instructions with human feedback},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2022},
+  eprint    = {2203.02155},
+  archivePrefix = {arXiv},
+  note      = {InstructGPT.}
+}
+
+% ---------- [30] ----------
+@misc{yuan2026aligned,
+  author       = {Yuan, S. and Lin, R. and Li, M. and others},
+  title        = {Are human-aligned models models of humans? {A} {Turing}-test gap in preference alignment},
+  year         = {2026},
+  eprint       = {2609.23640},
+  archivePrefix = {arXiv},
+  note         = {Author list per arXiv record.}
+}
+
+% ---------- [31] ----------
+@article{hertwig2009description,
+  author  = {Hertwig, Ralph and Erev, Ido},
+  title   = {The description--experience gap in risky choice: {A} review},
+  journal = {Trends in Cognitive Sciences},
+  volume  = {13},
+  number  = {12},
+  pages   = {517--523},
+  year    = {2009},
+  doi     = {10.1016/j.tics.2009.09.021}
+}
+
+% ---------- [32] ----------
+@book{wittgenstein1953philosophical,
+  author    = {Wittgenstein, Ludwig},
+  title     = {Philosophical Investigations},
+  translator = {Anscombe, G. E. M.},
+  publisher = {Blackwell},
+  year      = {1953},
+  note      = {Forms of life (\S\S 19, 23).}
+}
+
+% ---------- [33] ----------
+@article{mollo2026vector,
+  author  = {Coelho Mollo, Dimitri and Milli{\`e}re, Rapha{\"e}l},
+  title   = {The vector grounding problem},
+  journal = {Philosophy and the Mind Sciences},
+  year    = {2026},
+  eprint  = {2304.01481},
+  archivePrefix = {arXiv},
+  note    = {Special issue; preprint 2023.}
+}
+
+% ---------- [34] ----------
+@article{mallory2023wittgenstein,
+  author  = {Mallory, Fintan},
+  title   = {Wittgenstein, the other, and large language models},
+  journal = {Filosofisk Supplement},
+  volume  = {2},
+  number  = {3},
+  pages   = {79--88},
+  year    = {2023}
+}
+
+% ---------- [35] ----------
+@article{sogaard2023grounding,
+  author  = {S{\o}gaard, Anders},
+  title   = {Grounding the vector space of an octopus: {W}ord meaning from raw text},
+  journal = {Minds \& Machines},
+  volume  = {33},
+  number  = {1},
+  pages   = {33--54},
+  year    = {2023},
+  doi     = {10.1007/s11023-023-09622-4}
+}
+
+% ---------- [36] ----------
+@inproceedings{jiang2025hivemind,
+  author    = {Jiang, Liwei and Chai, Yuanjun and Li, Margaret and Liu, Mickel and Fok, Raymond and Dziri, Nouha and others},
+  title     = {Artificial hivemind: {T}he open-ended homogeneity of language models (and beyond)},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  eprint    = {2510.22954},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [37] ----------
+@misc{gharbi2026model,
+  author       = {Gharbi, Mehdi},
+  title        = {A model cannot be its own source of truth: {N}ine escape routes from the data wall, and the verifier wall behind them},
+  year         = {2026},
+  howpublished = {SSRN preprint 7479298},
+  url          = {https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=7479298},
+  note         = {同期工作，发布于 2026-09-17}
+}
+
+% ---------- [38] ----------
+@article{romera2024mathematical,
+  author  = {Romera-Paredes, Bernardino and Barekatain, Mohammadamin and Novikov, Alexander and Balog, Matej and Kumar, M. Pawan and others},
+  title   = {Mathematical discoveries from program search with large language models},
+  journal = {Nature},
+  volume  = {625},
+  pages   = {468--475},
+  year    = {2024},
+  doi     = {10.1038/s41586-023-06924-6},
+}
+
+% ---------- [39] ----------
+@misc{novikov2025alphaevolve,
+  author       = {Novikov, Alexander and Vetrov, Dmitry and others},
+  title        = {AlphaEvolve: {A} coding agent for scientific and algorithmic discovery},
+  year         = {2025},
+  eprint       = {2506.13131},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [40] ----------
+@techreport{engelbart1962augmenting,
+  author      = {Engelbart, Douglas C.},
+  title       = {Augmenting Human Intellect: {A} Conceptual Framework},
+  institution = {Stanford Research Institute},
+  type        = {Summary Report},
+  number      = {AFOSR-3223},
+  year        = {1962},
+  url         = {https://www.dougengelbart.org/pubs/augment-3906.html}
+}
+
+% ---------- [41] ----------
+@book{shneiderman2022human,
+  author    = {Shneiderman, Ben},
+  title     = {Human-Centered {AI}},
+  publisher = {Oxford University Press},
+  year      = {2022},
+  doi       = {10.1093/oso/9780192865254.001.0001},
+  note      = {Supertools: high human control x high automation.}
+}
+
+% ---------- [42] ----------
+@misc{shao2025future,
+  author       = {Shao, Yijia and Zope, Haarinadh and Jiang, Yuchen and Pei, Jiaxin and Nguyen, Duncan and Brynjolfsson, Erik and Yang, Diyi},
+  title        = {Future of work with {AI} agents: {A}uditing automation and augmentation potential across the {U.S.} workforce},
+  year         = {2025},
+  eprint       = {2506.06576},
+  archivePrefix = {arXiv},
+  note         = {WORKBank audit; Human Agency Scale over 844 tasks. Upstream's ``H1--H5 grading'' corrected to actual content (verification correction \#7).}
+}
+
+% ---------- [43] ----------
+@techreport{arntz2016risk,
+  author      = {Arntz, Melanie and Gregory, Terry and Zierahn, Ulrich},
+  title       = {The Risk of Automation for Jobs in {OECD} Countries: A Comparative Analysis of {PISA} and Adults Survey Results},
+  institution = {OECD},
+  type        = {Social, Employment and Migration Working Papers},
+  number      = {189},
+  year        = {2016},
+  doi         = {10.1787/5jlz9h56dvq7-en},
+  note        = {Task-level analysis: 47\% job-level estimates fall to 9\% under task decomposition.}
+}
+
+% ---------- [44] ----------
+@article{sticker2026formula,
+  author  = {Sticker, Martin},
+  title   = {The formula of humanity and {AI} use},
+  journal = {Philosophy \& Technology},
+  volume  = {39},
+  number  = {2},
+  pages   = {90},
+  year    = {2026},
+  doi     = {10.1007/s13347-026-01100-w},
+  note    = {Article 90, Commentary, open access (published 2026-05-01; University of Bristol). Kantian permission structure: AI may be a mere means; humans may not. Title and record verified against the Springer landing page 2026-10-14.}
+}
+
+% ---------- [45] ----------
+@book{suleyman2023coming,
+  author    = {Suleyman, Mustafa and Bhaskar, Michael},
+  title     = {The Coming Wave: Technology, Power, and the Twenty-First Century's Greatest Dilemma},
+  publisher = {Bodley Head / Penguin},
+  year      = {2023},
+}
+
+% ---------- [46] ----------
+@misc{suleyman2026personable,
+  author       = {Suleyman, Mustafa},
+  title        = {Public statement set on {AI} as personable tools, never persons},
+  year         = {2026},
+  howpublished = {Original post (T1 anchor), reported by Reuters, 2026-09-16},
+  url          = {https://www.reuters.com/technology/2026-09-16/},
+}
+
+% ---------- [47] ----------
+@misc{sacasas2023your,
+  author       = {Sacasas, L. M.},
+  title        = {Your {AI} is not a tool [essay]},
+  year         = {2023},
+  howpublished = {The Convivial Society (newsletter)},
+  url          = {https://theconvivialsociety.substack.com/},
+}
+
+% ---------- [48] ----------
+@misc{sims2025agents,
+  author       = {Sims, Peter and others},
+  title        = {{AI} agents vs. agentic {AI}: {A} conceptual taxonomy},
+  year         = {2025},
+  eprint       = {2505.10468},
+  archivePrefix = {arXiv},
+  note         = {Author list per arXiv record.}
+}
+
+% ---------- [49] ----------
+@inproceedings{haupt2025imitation,
+  author    = {Haupt, Andreas and Brynjolfsson, Erik},
+  title     = {Position: {AI} should not be an imitation game --- centaur evaluations},
+  booktitle = {Proceedings of the Conference on Language Modeling (COLM), PMLR},
+  volume    = {267},
+  year      = {2025},
+  note      = {Stanford Digital Economy Lab. Human+AI teams rarely beat the best AI alone.}
+}
+
+% ---------- [50] ----------
+@misc{shoresh2024modeling,
+  author       = {Shoresh, Dean and Loewenstein, Yonatan},
+  title        = {Modeling the centaur: {H}uman--machine synergy in sequential decision making},
+  year         = {2024},
+  eprint       = {2412.18593},
+  archivePrefix = {arXiv},
+  note         = {VERIFICATION CORRECTION \#1: arXiv:2412.18593 is this paper --- NOT Korinek \& Stiglitz, which is therefore not cited anywhere in this work. The two centaur papers ([49] pessimistic, [50] synergy) are the C4 counter-evidence pair.}
+}
+
+% ---------- [51] ----------
+@misc{deepseek2026v41,
+  author       = {{DeepSeek-AI}},
+  title        = {{DeepSeek-V4.1-Flash}: Pushing the limits of {KV} cache compression},
+  year         = {2026},
+  eprint       = {2609.19969},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [52] ----------
+@misc{xiaomi2026mimo,
+  author       = {{Xiaomi LLM-Core Team}},
+  title        = {{MiMo-V2.6}: Scaling reinforcement learning towards self-improvement},
+  year         = {2026},
+  eprint       = {2610.11959},
+  archivePrefix = {arXiv},
+  note         = {Failure-reflection and error-retention practices; Section 4.2.6: ``keeps the original error recognizable and makes the correction explicit'' (verbatim).}
+}
+
+% ---------- [53] ----------
+@misc{zai2026glm5,
+  author       = {{Z.ai}},
+  title        = {{GLM-5}: From vibe coding to agentic engineering},
+  year         = {2026},
+  eprint       = {2602.15763},
+  archivePrefix = {arXiv},
+  note         = {Section 3.1: ``Erroneous segments within trajectories are retained but masked out in the loss function, allowing the model to learn error correction behaviors'' (verbatim).}
+}
+
+% ---------- [54] ----------
+@misc{deepseek2025r1,
+  author       = {{DeepSeek-AI}},
+  title        = {{DeepSeek-R1}: Incentivizing reasoning capability in {LLMs} via reinforcement learning},
+  year         = {2025},
+  eprint       = {2501.12948},
+  archivePrefix = {arXiv},
+  doi          = {10.1038/s41586-025-09422-z},
+  note         = {Published in Nature 645:633--638 (2025).}
+}
+
+% ---------- [55] ----------
+@inproceedings{sorensen2025spectrum,
+  author    = {Sorensen, Tyler and Newman, Benjamin and Moore, Jared and Park, Chan and Fisher, Jillian and Mireshghallah, Niloofar and Jiang, Liwei and Choi, Yejin},
+  title     = {Spectrum tuning: {P}ost-training for distributional coverage and in-context steerability},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  eprint    = {2510.06084},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [56] ----------
+@misc{an2023lema,
+  author       = {An, Shengnan and Ma, Zexiong and Lin, Zeqi and Zheng, Nanning and Lou, Jian-Guang and Chen, Weizhu},
+  title        = {Learning from mistakes makes {LLM} better reasoner},
+  year         = {2023},
+  eprint       = {2310.20689},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [57] ----------
+@inproceedings{lightman2024verify,
+  author    = {Lightman, Hunter and Kosaraju, Vineet and Burda, Yura and Edwards, Harri and Baker, Bowen and Lee, Teddy and Leike, Jan and Schulman, John and Sutskever, Ilya and Cobbe, Karl},
+  title     = {Let's verify step by step},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  eprint    = {2305.20050},
+  archivePrefix = {arXiv},
+  note      = {PRM800K: 800k step-level human ratings.}
+}
+
+% ---------- [58] ----------
+@misc{spar2026f26,
+  author       = {{SPAR}},
+  title        = {{SPAR} f26: Human-annotated agent failure traces},
+  year         = {2026},
+  howpublished = {sparai.org project page},
+  url          = {https://sparai.org/projects/f26/recPcCQjmdWCEjPJL},
+  note         = {低置信单元}
+}
+
+% ---------- [59] ----------
+@misc{song2024trial,
+  author       = {Song, Yifan and Yin, Da and Yue, Xiang and Huang, Jie and Li, Sujian and Lin, Bill Yuchen},
+  title        = {Trial and error: {E}xploration-based trajectory optimization for {LLM} agents},
+  year         = {2024},
+  eprint       = {2403.02502},
+  archivePrefix = {arXiv},
+  note         = {ETO.}
+}
+
+% ---------- [60] ----------
+@inproceedings{yuan2024advancing,
+  author    = {Yuan, Lifan and Cui, Ganqu and Wang, Hanbin and Ding, Ning and Wang, Xingyao and Deng, Jia and Shan, Boji and others},
+  title     = {Advancing {LLM} reasoning generalists with preference trees},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  eprint    = {2404.02078},
+  archivePrefix = {arXiv},
+  note      = {UltraInteract dataset.}
+}
+
+% ---------- [61] ----------
+@inproceedings{baek2026dfuser,
+  author    = {Baek, David D. and Estornell, Andrew and Zhang, Yichi and Faaiz, Muhammad and others},
+  title     = {{D-FUSEr}: Diverse failure, unified success via error-distribution shaping in {LLM} reasoning},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML), PMLR},
+  volume    = {306},
+  year      = {2026},
+  note      = {Absence-search near-miss (Q8): machine-rollout error diversity, not human-practice coverage. ICML 2026 poster; author list per ICML 2026 record (verified 2026-10-14: David D. Baek, Andrew Estornell, Yichi Zhang, Muhammad Faaiz).}
+}
+
+% ---------- [62] ----------
+@misc{liu2026leveraging,
+  author       = {Liu, Wenpu and Xu, Yuqi and Xie, Weichu and Zhu, Yongfu and Dong, Shuai and Wang, Ziyue and Shao, Wenqi and Zhang, Xiaoying and Yang, Tong and Duan, Nan and Wang, Jiaqi},
+  title        = {Leveraging error diversity in group rollouts for reinforcement learning},
+  year         = {2026},
+  eprint       = {2605.17333},
+  archivePrefix = {arXiv},
+  note         = {EDAS (Error Diversity Advantage Shaping). Absence-search near-miss (Q8), the closest pair with [61]. Full 11-author list verified against the arXiv record 2026-10-14.}
+}
+
+% ---------- [63] ----------
+@inproceedings{xie2023doremi,
+  author    = {Xie, Sang Michael and Santurkar, Shibani and Ma, Tengyu and Tsipras, Dimitris},
+  title     = {{DoReMi}: Optimizing data mixtures speeds up language model pretraining},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023},
+  eprint    = {2205.10434},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [64] ----------
+@misc{ye2024data,
+  author       = {Ye, H. and others},
+  title        = {Data mixing laws: {O}ptimizing data mixtures by scaling law for pretraining},
+  year         = {2024},
+  eprint       = {2403.16952},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [65] ----------
+@misc{penedo2024fineweb,
+  author       = {Penedo, G. and Kydl{\'i}{\v c}ek, H. and Ben Allal, L. and others},
+  title        = {The {FineWeb} datasets: {D}ecanting the web for the finest text data at scale},
+  year         = {2024},
+  eprint       = {2406.17557},
+  archivePrefix = {arXiv},
+  note         = {HuggingFaceFW. FineWeb-Edu quality filtering discards on the order of 92\% of the raw web --- ``absence as evidence'' unit.}
+}
+
+% ---------- [66] ----------
+@inproceedings{zhou2025should,
+  author    = {Zhou, Ke and Constantinides, Marios and Quercia, Daniele},
+  title     = {Should {LLMs} be {WEIRD}? {E}xploring {WEIRD}ness and human rights in large language models},
+  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES)},
+  year      = {2025},
+  eprint    = {2508.19269},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [67] ----------
+@misc{fenoglio2026asymmetric,
+  author       = {Fenoglio, Enzo},
+  title        = {Asymmetric communication: {L}arge language models and language games},
+  year         = {2026},
+  eprint       = {2607.28137},
+  archivePrefix = {arXiv},
+  note         = {同期工作}
+}
+
+% ---------- [68] ----------
+@inproceedings{sorensen2024roadmap,
+  author    = {Sorensen, Tyler and Moore, Jared and Fisher, Julian and Gordon, Mitchell and Mireshghallah, Niloofar and Rytting, Christopher Michael and Ye, Austin and Jiang, Liwei and Lu, Xuechen and Dziri, Nouha and Althoff, Tim and Choi, Yejin},
+  title     = {A roadmap to pluralistic alignment},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  eprint    = {2402.05070},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [69] ----------
+@inproceedings{park2024rlhf,
+  author    = {Park, Chan and Liu, Michael and Kong, Dormin and Zhang, Kaiqing and Ozdaglar, Asuman},
+  title     = {{RLHF} from heterogeneous feedback via personalization and preference aggregation},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  eprint    = {2405.00254},
+  archivePrefix = {arXiv},
+  note      = {Social-choice aggregation (utilitarian vs.\ leximin).}
+}
+
+% ---------- [70] ----------
+@inproceedings{baum2025aggregation,
+  author    = {Baum, Kevin and Slavkovik, Marija},
+  title     = {Aggregation problems in machine ethics and {AI} alignment},
+  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES)},
+  year      = {2025},
+  note      = {Second author added per verification correction \#11.}
+}
+
+% ---------- [71] ----------
+@inproceedings{huang2024collective,
+  author    = {Huang, Saffron and Siddarth, Divya and Lovitt, Liane and others},
+  title     = {Collective {Constitutional AI}: {A}ligning a language model with public input},
+  booktitle = {Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT)},
+  year      = {2024},
+  doi       = {10.1145/3630106.3658979},
+  eprint    = {2406.07814},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [72] ----------
+@misc{anthropic2025welfare,
+  author       = {{Anthropic}},
+  title        = {Exploring model welfare},
+  year         = {2025},
+  howpublished = {anthropic.com research statement (2025-04-24)},
+  url          = {https://www.anthropic.com/research/exploring-model-welfare},
+}
+
+% ---------- [73] ----------
+@misc{govcn2019principles,
+  author       = {{National New Generation AI Governance Expert Committee (国家新一代人工智能治理专业委员会)}},
+  title        = {Governance Principles for the New Generation {AI} --- Developing Responsible {AI} (新一代人工智能治理原则)},
+  year         = {2019},
+  howpublished = {official policy document, gov.cn (2019-06-17)},
+  url          = {http://www.gov.cn/xinwen/2019-06/17/content_5401006.htm},
+}
+
+% ---------- [74] ----------
+@misc{govcn2023initiative,
+  author       = {{State Council of the People's Republic of China}},
+  title        = {Global {AI} Governance Initiative (全球人工智能治理倡议)},
+  year         = {2023},
+  howpublished = {official policy document, gov.cn},
+  url          = {https://www.gov.cn/zhengce/202310/content_6911589.htm}
+}
+
+% ---------- [75] ----------
+@misc{govcn2025aiplus,
+  author       = {{State Council of the People's Republic of China}},
+  title        = {Opinion on Deeply Implementing the ``{Artificial Intelligence+}'' Action (关于深入实施``人工智能+''行动的意见)},
+  year         = {2025},
+  howpublished = {official policy document, gov.cn},
+}
+
+% ---------- [76] ----------
+@book{zhuangzi2016complete,
+  author    = {Zhuangzi},
+  title     = {Zhuangzi: The Complete Writings},
+  translator = {Ziporyn, Brook},
+  publisher = {Hackett Publishing},
+  year      = {2020},
+}
+
+% ---------- [77] ----------
+@misc{ge2024scaling,
+  author       = {Ge, T. and others},
+  title        = {Scaling synthetic data creation with 1,000,000,000 personas},
+  year         = {2024},
+  eprint       = {2406.20094},
+  archivePrefix = {arXiv},
+  note         = {Persona Hub (Tencent AI Lab). Local heuristic identity of diversity.}
+}
+
+% ---------- [78] ----------
+@misc{singh2024aya,
+  author       = {Singh, S. and others},
+  title        = {{Aya} dataset: {A}n open-access collection for multilingual instruction tuning},
+  year         = {2024},
+  eprint       = {2402.06619},
+  archivePrefix = {arXiv},
+}
+
+% ---------- [79] ----------
+@inproceedings{wu2026agentdice,
+  author       = {Wu, Zheng and Lou, Xingyu and Ma, Xinbei and Li, Yansi and Liu, Weiwen and Zhang, Weinan and Wang, Jun and Zhang, Zhuosheng},
+  title        = {Agent-Dice: {D}isentangling knowledge updates via geometric consensus for agent continual learning},
+  booktitle    = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year         = {2026},
+  eprint       = {2601.03641},
+  archivePrefix = {arXiv},
+}
