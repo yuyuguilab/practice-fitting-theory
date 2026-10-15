@@ -64,6 +64,7 @@ tectonic paper.tex                 # 重新编译 PDF（需 references.bib + fig
   title   = {Fitting the Practice, Not the Works: A Human-Referential Theory of AGI},
   author  = {Yugui Yu},
   journal = {YYG Strategy Lab, preprint},
+  doi     = {10.5281/zenodo.23391808},
   year    = {2026},
   month   = {10},
   doi     = {10.5281/zenodo.23391808},
