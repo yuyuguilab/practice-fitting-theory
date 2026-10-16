@@ -35,7 +35,7 @@ This paper builds on a prior empirical audit [5], which examined how the industr
 3. **A structured evidence map** — a methodological component in the spirit of the companion audit's codebook [5] — that turns the theory's central gap into a quantifiable, falsifiable result: the experience-type axis is explicitly treated in 0 of 80 works.
 4. **Four termination boundaries** for flow-side fitting (end of the practicing subject; fitter overreach; institutional boundary; self-referential contamination), which convert the temporal clause from a slogan into a bounded claim.
 
-**Roadmap.** Section 2 argues that AGI is a philosophical concept. Section 3 develops practice-fitting as the implementation thesis, treating three lines of opposition head-on. Section 4 states the augmentative-tool position as a normative stance with an academic lineage. Section 5 presents the evidence map: method, tables, figures, and the quantified gap. Section 6 addresses the tensions and fixes the four boundaries. Section 7 derives three methodological implications for future work. Section 8 concludes.
+**Roadmap.** Section 2 argues that AGI is a philosophical concept. Section 3 develops practice-fitting as the implementation thesis, treating three lines of opposition head-on, and closes with a formal sketch (Section 3.1) that renders the stock/flow distinction as a pair of optimization problems and the boundaries as stopping conditions. Section 4 states the augmentative-tool position as a normative stance with an academic lineage. Section 5 presents the evidence map: method, tables, figures, and the quantified gap. Section 6 addresses the tensions and fixes the four boundaries. Section 7 derives three methodological implications for future work. Section 8 concludes.
 
 ## 2. Concept: AGI as a Philosophical Concept
 
@@ -76,6 +76,38 @@ The second claim is implementational: the path to AGI runs through the fitting o
 *Third, the non-anthropomorphic superhuman achievements.* FunSearch and AlphaEvolve discover mathematics beyond human intuition via search plus verification [38, 39]. The dialectical response: their verifiers — mathematical correctness, executable code, evolutionary fitness — are human institutions. Search can exceed every human mathematician's intuition while remaining on human scaffolding: what counts as a correct proof or a running program is fixed by institutions of verification that search does not generate. Superhuman capability on human-verified ground is not an exit from the human reference frame; it is the reference frame's most concentrated expression. (The companion audit's conclusion that "the verifier is the bearing of the flywheel" states the same point for training data [5].)
 
 **Demarcation from the nearest frameworks.** From the cultural-technology thesis [6] this theory differs by adding a temporal distinction (works vs. practice) that the thesis lacks — and, with it, data-methodological consequences: if models are cultural technologies, the next question is which strata of culture are being transmitted, a question the thesis classifies but does not operationalize. From Vallor's mirror [7] it differs in direction: the mirror is a critical phenomenology of distortion — what the reflection does to human self-understanding — whereas this theory offers a constructive account of what a *faithful* fit would require as coverage. The evidence map (Section 5) makes the demarcation quantifiable; Table 5 consolidates it.
+
+
+### 3.1 A Formal Sketch
+
+The claims above can be sharpened into notation. The purpose is conceptual clarification, not new mathematics: every object below is standard, and the four statements are observations rather than theorems. The practice distribution is not directly observable; the sketch is a modeling language that makes the theory's claims precise enough to test — and precise enough to be wrong.
+
+**Setup.** Let $\{X_t\}_{t \geq 0}$ denote human practice: a time-indexed stochastic process with $X_t \sim P_t$, where $P_t$ is non-stationary — practice regenerates and drifts for as long as it continues. The accumulated works at time $T$ form the multiset $W_T = \{x : \text{production time} \leq T\}$, a finite sample of the process's realized history.
+
+**Two fitting problems.**
+
+$$\textbf{corpus-fitting:}\quad \hat{\theta}_T \in \arg\min_\theta \frac{1}{|W_T|}\sum_{x \in W_T} \ell(\theta, x) \qquad \textbf{practice-fitting:}\quad \theta^* \in \arg\min_\theta \lim_{T\to\infty} \frac{1}{T}\int_0^T \mathbb{E}_{X \sim P_t}\,[\ell(\theta, X)]\, dt$$
+
+**Observation 1 (the wall is a property of the measure, not of humanity).** $W_T$ has finite total mass; returns to further sampling diminish as the archive is consumed, and the optimum over the empirical measure saturates. $P_t$ gains new mass for as long as practice continues. The data wall is thus a statement about corpus-fitting alone. Moreover, $W_T$ is itself a biased, incomplete sample of the process: corpus-fitting fits a projection of practice, not practice.
+
+**Observation 2 (the spectrum axis as a coverage functional).** Let $\tau : \mathcal{X} \to \mathcal{S}$ map an experience item to its type (population; success/failure; expert/novice; typical/marginal). A fitted model induces a type distribution $Q_\theta$ over $\mathcal{S}$, and full-spectrum fitting requires a coverage functional such as
+
+$$C(Q_\theta, P_t) = \int_{\mathcal{S}} \min\big(q_\theta(s), p_t(s)\big)\, ds$$
+
+to remain large on every type cell. Mode collapse — including the averaging effect documented for open-ended generation [36] — is the degeneration $q_\theta(s) \to 0$ on marginal cells. The evidence-map result of Section 5.3 then acquires an operational restatement: a coverage operator over experience type appears in the training objective of 0 of the 80 surveyed works.
+
+**Observation 3 (fitting lag as regret).** With model snapshots updated on a period $\Delta$, the effective loss acquires a drift term of the form $D(P_t \,\|\, P_{\mathrm{snap}})$, and its accumulation over time is the regret structure of non-stationary online learning. The unresolved stability–plasticity dilemma [79] is precisely the absence of an optimizer that tracks $P_t$ without catastrophic forgetting: the binding constraint sits on the absorption side, not the collection side (Section 7).
+
+**Observation 4 (means and ends are different optimization problems).** The two readings of the implementation layer are
+
+$$\text{(a)}\;\; \max_\theta M(\theta) \qquad\qquad \text{(b)}\;\; \max_\theta\, U_{\mathrm{human}}(\theta) \;\; \text{subject to} \;\; \theta \text{ fitting } P_t,$$
+
+where (a) takes imitation of practice as the end and (b) treats fitting as a constraint under a human-utility objective. The two problems generally have different optima — the variational form of the Turing Trap [8]: imitating humans as a goal and fitting humans as a means diverge.
+
+**The four boundaries as stopping conditions.** B1: if practice terminates, the time domain is bounded and the fitting integral is finite. B2: once the fitter dominates human performance on all measurable tasks, the practice-fitting constraint ceases to bind and the reference frame is vacated. B3: legal and consent constraints define a time-varying feasible set of collectible practice, $A_t \subset \mathcal{X}$. B4: once the model is woven into practice, $P_{t+1} = F(P_t, \theta)$ — the target becomes endogenous to the fitting. Model collapse [3] is the special case in which $F$ is recursive training on model output; provenance-stratified objectives (Section 6) mitigate this feedback loop without eliminating it.
+
+**What the sketch provides.** Each observation is testable with existing tools — saturation curves for Observation 1, deployment-time drift for Observation 3, augmentation-versus-substitution comparisons for Observation 4, and collapse and provenance-stratification experiments for the boundaries. The sketch's role is not to prove the theory but to make it falsifiable in the strict sense: precise enough to be wrong.
+
 
 ## 4. Position: The Augmentative-Tool Stance
 

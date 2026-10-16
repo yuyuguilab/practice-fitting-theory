@@ -20,6 +20,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 \usepackage{newtxtext,newtxmath}
 \usepackage{microtype}
 \setlength{\emergencystretch}{2em}
@@ -86,7 +87,7 @@ This paper makes four contributions:
 \end{enumerate}
 
 \paragraph{Roadmap.}
-Section~\ref{sec:concept} argues that AGI is a philosophical concept. Section~\ref{sec:implementation} develops practice-fitting as the implementation thesis, treating three lines of opposition head-on. Section~\ref{sec:position} states the augmentative-tool stance as a normative stance with an academic lineage. Section~\ref{sec:evidencemap} presents the evidence map: method, tables, figures, and the quantified gap. Section~\ref{sec:tensions} addresses the tensions and fixes the four boundaries. Section~\ref{sec:implications} derives three methodological implications for future work. Section~\ref{sec:conclusion} concludes.
+Section~\ref{sec:concept} argues that AGI is a philosophical concept. Section~\ref{sec:implementation} develops practice-fitting as the implementation thesis, treating three lines of opposition head-on, and closes with a formal sketch (Section~\ref{sec:formalsketch}) that renders the stock/flow distinction as a pair of optimization problems and the boundaries as stopping conditions. Section~\ref{sec:position} states the augmentative-tool stance as a normative stance with an academic lineage. Section~\ref{sec:evidencemap} presents the evidence map: method, tables, figures, and the quantified gap. Section~\ref{sec:tensions} addresses the tensions and fixes the four boundaries. Section~\ref{sec:implications} derives three methodological implications for future work. Section~\ref{sec:conclusion} concludes.
 
 \section{Concept: AGI as a Philosophical Concept}\label{sec:concept}
 
@@ -141,6 +142,47 @@ The fitting object is the \emph{expressible projection of human forms of life} -
 
 \paragraph{Demarcation from the nearest frameworks.}
 From the cultural-technology thesis \cite{farrell2025cultural} this theory differs by adding a temporal distinction (works vs.\ practice) that the thesis lacks --- and, with it, data-methodological consequences: if models are cultural technologies, the next question is which strata of culture are being transmitted, a question the thesis classifies but does not operationalize. From Vallor's mirror \cite{vallor2024mirror} it differs in direction: the mirror is a critical phenomenology of distortion --- what the reflection does to human self-understanding --- whereas this theory offers a constructive account of what a \emph{faithful} fit would require as coverage. The evidence map (Section~\ref{sec:evidencemap}) makes the demarcation quantifiable; Table~\ref{tab:frameworks} consolidates it.
+
+
+\subsection{A Formal Sketch}\label{sec:formalsketch}
+
+The claims above can be sharpened into notation. The purpose is conceptual clarification, not new mathematics: every object below is standard, and the four statements are observations rather than theorems. The practice distribution is not directly observable; the sketch is a modeling language that makes the theory's claims precise enough to test---and precise enough to be wrong.
+
+\paragraph{Setup.}
+Let $\{X_t\}_{t \geq 0}$ denote human practice: a time-indexed stochastic process with $X_t \sim P_t$, where $P_t$ is non-stationary---practice regenerates and drifts for as long as it continues. The accumulated works at time $T$ form the multiset $W_T = \{x : \text{production time} \leq T\}$, a finite sample of the process's realized history.
+
+\paragraph{Two fitting problems.}
+\begin{align*}
+\textbf{corpus-fitting:}\quad & \hat{\theta}_T \in \arg\min_\theta \frac{1}{|W_T|}\sum_{x \in W_T} \ell(\theta, x) \\[2pt]
+\textbf{practice-fitting:}\quad & \theta^* \in \arg\min_\theta \lim_{T\to\infty} \frac{1}{T}\int_0^T \mathbb{E}_{X \sim P_t}\,\big[\ell(\theta, X)\big]\, dt
+\end{align*}
+
+\paragraph{Observation 1 (the wall is a property of the measure, not of humanity).}
+$W_T$ has finite total mass; returns to further sampling diminish as the archive is consumed, and the optimum over the empirical measure saturates. $P_t$ gains new mass for as long as practice continues. The data wall is thus a statement about corpus-fitting alone. Moreover, $W_T$ is itself a biased, incomplete sample of the process: corpus-fitting fits a projection of practice, not practice.
+
+\paragraph{Observation 2 (the spectrum axis as a coverage functional).}
+Let $\tau : \mathcal{X} \to \mathcal{S}$ map an experience item to its type (population; success/failure; expert/novice; typical/marginal). A fitted model induces a type distribution $Q_\theta$ over $\mathcal{S}$, and full-spectrum fitting requires a coverage functional such as
+\[
+C(Q_\theta, P_t) \;=\; \int_{\mathcal{S}} \min\!\big(q_\theta(s),\, p_t(s)\big)\, ds
+\]
+to remain large on every type cell. Mode collapse---including the averaging effect documented for open-ended generation \cite{jiang2025hivemind}---is the degeneration $q_\theta(s) \to 0$ on marginal cells. The evidence-map result of Section~\ref{sec:unnamed} then acquires an operational restatement: a coverage operator over experience type appears in the training objective of 0 of the 80 surveyed works.
+
+\paragraph{Observation 3 (fitting lag as regret).}
+With model snapshots updated on a period $\Delta$, the effective loss acquires a drift term of the form $D(P_t \,\|\, P_{\mathrm{snap}})$, and its accumulation over time is the regret structure of non-stationary online learning. The unresolved stability--plasticity dilemma \cite{wu2026agentdice} is precisely the absence of an optimizer that tracks $P_t$ without catastrophic forgetting: the binding constraint sits on the absorption side, not the collection side (Section~\ref{sec:implications}).
+
+\paragraph{Observation 4 (means and ends are different optimization problems).}
+The two readings of the implementation layer are
+\begin{align*}
+\text{(a)}\;\; \max_\theta M(\theta) \qquad\qquad
+\text{(b)}\;\; \max_\theta\, U_{\mathrm{human}}(\theta) \;\; \text{subject to} \;\; \theta \text{ fitting } P_t,
+\end{align*}
+where (a) takes imitation of practice as the end and (b) treats fitting as a constraint under a human-utility objective. The two problems generally have different optima---the variational form of the Turing Trap \cite{brynjolfsson2022turing}: imitating humans as a goal and fitting humans as a means diverge.
+
+\paragraph{The four boundaries as stopping conditions.}
+B1: if practice terminates, the time domain is bounded and the fitting integral is finite. B2: once the fitter dominates human performance on all measurable tasks, the practice-fitting constraint ceases to bind and the reference frame is vacated. B3: legal and consent constraints define a time-varying feasible set of collectible practice, $A_t \subset \mathcal{X}$. B4: once the model is woven into practice, $P_{t+1} = F(P_t, \theta)$---the target becomes endogenous to the fitting. Model collapse \cite{shumailov2024collapse} is the special case in which $F$ is recursive training on model output; provenance-stratified objectives (Section~\ref{sec:tensions}) mitigate this feedback loop without eliminating it.
+
+\paragraph{What the sketch provides.}
+Each observation is testable with existing tools---saturation curves for Observation 1, deployment-time drift for Observation 3, augmentation-versus-substitution comparisons for Observation 4, and collapse and provenance-stratification experiments for the boundaries. The sketch's role is not to prove the theory but to make it falsifiable in the strict sense: precise enough to be wrong.
 
 \section{Position: The Augmentative-Tool Stance}\label{sec:position}
 

@@ -52,5 +52,5 @@
     }
   ],
   "notes": "Code in analysis/ is licensed MIT; manuscript, codebook, figures, and coding data are CC BY 4.0. Author contact: they4897@gmail.com. All coded claims carry verbatim or design anchors with source URLs; conclusions are bounded to the purposefully sampled corpus. Cohen's kappa from a 20% stratified blind re-coding is scheduled for 2026-10-29 and will be reported in the next version.",
-  "version": "v1.0.0"
+  "version": "v1.1.0"
 }

@@ -8,6 +8,8 @@
 % 图为英文原图，原样复用；图注中引用图上文字处保留英文。
 
 \documentclass[10pt,fontset=fandol]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \usepackage[margin=1in]{geometry}
 \setlength{\emergencystretch}{2em}
@@ -74,7 +76,7 @@
 \end{enumerate}
 
 \paragraph{路线图。}
-第~\ref{sec:concept} 节论证 AGI 是哲学概念。第~\ref{sec:implementation} 节展开实践拟合作为实现论题，正面处理三路反对。第~\ref{sec:position} 节陈述增强性工具立场，作为一种具有学术谱系的规范立场。第~\ref{sec:evidencemap} 节呈现证据地图：方法、表格、图与量化缺口。第~\ref{sec:tensions} 节处理张力并划定四条边界。第~\ref{sec:implications} 节导出三个面向未来工作的方法论蕴含。第~\ref{sec:conclusion} 节作结。
+第~\ref{sec:concept} 节论证 AGI 是哲学概念。第~\ref{sec:implementation} 节展开实践拟合作为实现论题，正面处理三路反对，末尾以一节形式化概览（第~\ref{sec:formalsketch} 节）把存量/流量之别表述为一对优化问题，并把四条边界表述为停止条件。第~\ref{sec:position} 节陈述增强性工具立场，作为一种具有学术谱系的规范立场。第~\ref{sec:evidencemap} 节呈现证据地图：方法、表格、图与量化缺口。第~\ref{sec:tensions} 节处理张力并划定四条边界。第~\ref{sec:implications} 节导出三个面向未来工作的方法论蕴含。第~\ref{sec:conclusion} 节作结。
 
 \section{概念：AGI 作为哲学概念}\label{sec:concept}
 
@@ -129,6 +131,38 @@ GPT-4o 复现了由自由选择调节的类人认知失调与自我辩护模式 
 
 \paragraph{与最近框架的划界。}
 相对文化技术论题 \cite{farrell2025cultural}，本理论新增其所缺的时间性区分（作品 vs.\ 实践）——并随之带来数据方法论后果：若模型是文化技术，下一个问题是文化的哪些层在被传递，对于这个问题，该论题做了分类，却未加操作化。相对 Vallor 之镜 \cite{vallor2024mirror}，本理论方向不同：镜子是对扭曲的批判现象学——反射对人类自我理解做了什么——而本理论则给出建设性说明：忠实拟合在覆盖上需要什么。证据地图（第~\ref{sec:evidencemap} 节）使划界可计数；表~\ref{tab:frameworks} 加以整合。
+
+
+\subsection{形式化概览}\label{sec:formalsketch}
+
+上述主张可以进一步写成符号形式。本节目的在于概念澄清，而非新的数学：下面出现的每个对象都是标准的，四条陈述是观察（observations）而非定理。实践分布并非直接可观测；本概览是一种建模语言，使理论的主张精确到可检验——也精确到可以被证伪。
+
+\paragraph{设定。} 令 $\{X_t\}_{t \geq 0}$ 表示人类实践：一个以时间为索引的随机过程，$X_t \sim P_t$，其中 $P_t$ 非平稳——只要实践持续，它就再生并漂移。截至时刻 $T$ 的累积作品构成多重集 $W_T = \{x : \text{产出时间} \leq T\}$，即该过程已实现历史的一个有限样本。
+
+\paragraph{两个拟合问题。}
+
+\[\textbf{语料拟合：}\quad \hat{\theta}_T \in \arg\min_\theta \frac{1}{|W_T|}\sum_{x \in W_T} \ell(\theta, x) \qquad \textbf{实践拟合：}\quad \theta^* \in \arg\min_\theta \lim_{T\to\infty} \frac{1}{T}\int_0^T \mathbb{E}_{X \sim P_t}\,[\ell(\theta, X)]\, dt\]
+
+\paragraph{观察 1（墙是测度的性质，不是人类的性质）。} $W_T$ 的总质量有限；随着档案被消耗，进一步采样的回报递减，经验测度上的最优点趋于饱和。而只要实践继续，$P_t$ 就不断获得新的质量。数据墙因此只是关于语料拟合的陈述。此外，$W_T$ 本身是该过程的一个有偏、不完备的样本：语料拟合拟合的是实践的一个投影，而非实践本身。
+
+\paragraph{观察 2（谱轴作为覆盖泛函）。} 令 $\tau : \mathcal{X} \to \mathcal{S}$ 将一个经验项映射到其类型（人群；成功/失败；专家/新手；典型/边缘）。拟合出的模型在 $\mathcal{S}$ 上诱导类型分布 $Q_\theta$，全谱拟合要求覆盖泛函
+
+\[C(Q_\theta, P_t) = \int_{\mathcal{S}} \min\big(q_\theta(s), p_t(s)\big)\, ds\]
+
+在每个类型胞元上都保持较大。模式坍塌——包括开放式生成中记录到的均值化效应 [36]——即 $q_\theta(s)$ 在边缘胞元上退化为 0。5.3 节的证据地图结果由此获得一个可操作的复述：在 80 篇被调查作品的训练目标中，作用于经验类型的覆盖算子出现 0 次。
+
+\paragraph{观察 3（拟合时差作为遗憾值）。} 当模型快照按周期 $\Delta$ 更新时，有效损失增加一个形如 $D(P_t \,\|\, P_{\mathrm{snap}})$ 的漂移项，其随时间的累积正是非平稳在线学习的遗憾（regret）结构。尚未解决的稳定性—可塑性两难 [79] 恰在于缺少一个能在不发生灾难性遗忘的前提下跟踪 $P_t$ 的优化器：约束瓶颈在吸收侧而非采集侧（第 7 节）。
+
+\paragraph{观察 4（手段与目的是不同的优化问题）。} 实现层的两种读法是
+
+\[\text{(a)}\;\; \max_\theta M(\theta) \qquad\qquad \text{(b)}\;\; \max_\theta\, U_{\mathrm{human}}(\theta) \;\; \text{s.t.} \;\; \theta \text{ 拟合 } P_t,\]
+
+其中 (a) 把对实践的模仿当作目的，(b) 把拟合当作人类效用目标下的约束。两个问题一般有不同的最优点——这是图灵陷阱 [8] 的变分形式：以模仿人为目标和以拟合人为手段，会走向分岔。
+
+\paragraph{四条边界作为停止条件。} B1：若实践终止，时间域有界，拟合积分有限。B2：一旦拟合者在所有可测任务上支配人类表现，实践拟合约束不再起作用，参照系被腾空。B3：法律与知情同意约束定义了一个随时间变化的可采集实践可行集 $A_t \subset \mathcal{X}$。B4：一旦模型织入实践，$P_{t+1} = F(P_t, \theta)$——拟合目标变成内生的。模型坍塌 [3] 是 $F$ 为"在模型输出上递归训练"时的特例；出处分层的目标函数（第 6 节）缓解这一反馈回路，但不消除它。
+
+\paragraph{概览所提供的。} 每条观察都可用现有工具检验——观察 1 对应饱和曲线，观察 3 对应部署期漂移测量，观察 4 对应增强与替代的对照比较，边界对应坍塌实验与出处分层训练。本概览的角色不是证明理论，而是使理论在严格意义上可证伪：精确到可以被证错。
+
 
 \section{立场：增强性工具立场}\label{sec:position}
 
