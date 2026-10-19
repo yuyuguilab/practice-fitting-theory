@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{107}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -89,6 +89,21 @@ J.~R. Morris, J.~Sohl-Dickstein, N.~Fiedel, et~al.
 J.~Kwa, S.~Le, D.~Zhang, et~al.
 \newblock Measuring {AI} ability to complete long tasks, 2025.
 \newblock METR. Task-horizon doubling ~every 7 months.
+
+\bibitem[{METR}(2026)]{metr2026th11}
+{METR}.
+\newblock Time horizon 1.1.
+\newblock metr.org blog, 2026.
+\newblock URL \url{https://metr.org/blog/2026-1-29-time-horizon-1-1}.
+\newblock 2026-01-29.
+
+\bibitem[Witkin(2026)]{witkin2026metr}
+Nathan Witkin.
+\newblock Against the {METR} graph.
+\newblock Transformer News, 2026.
+\newblock URL
+  \url{https://www.transformernews.ai/p/against-the-metr-graph-coding-capabilities-software-jobs-task-ai}.
+\newblock 2026-01-20.
 
 \bibitem[Ili{\'c} et~al.(2024)]{ilic2024evidence}
 D.~Ili{\'c} et~al.
@@ -254,6 +269,23 @@ Liwei Jiang, Yuanjun Chai, Margaret Li, Mickel Liu, Raymond Fok, Nouha Dziri,
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}, 2025.
 
+\bibitem[Liu et~al.(2025)Liu, Jin, Kim, Yuan, Zhao, Kulikov, Li, Sukhbaatar,
+  Lanchantin, and Weston]{liu2025spice}
+Bo~Liu, Chuanyang Jin, Seungone Kim, Weizhe Yuan, Wenting Zhao, Ilia Kulikov,
+  Xian Li, Sainbayar Sukhbaatar, Jack Lanchantin, and Jason Weston.
+\newblock {SPICE}: Self-play in corpus environments improves reasoning, 2025.
+
+\bibitem[Kim et~al.(2026)Kim, Kotha, Choi, Hashimoto, Haber, and
+  Liang]{kim2026megadocs}
+Konwoo Kim, Suhas Kotha, Yejin Choi, Tatsunori Hashimoto, Nick Haber, and Percy
+  Liang.
+\newblock Data-efficient pre-training by scaling synthetic megadocs, 2026.
+
+\bibitem[Belova et~al.(2026)Belova, Kansal, Liang, Xiao, and
+  Jha]{belova2026alternative}
+Margarita Belova, Yuval Kansal, Yihao Liang, Jiaxin Xiao, and Niraj~K. Jha.
+\newblock An alternative trajectory for generative {AI}, 2026.
+
 \bibitem[Gharbi(2026)]{gharbi2026model}
 Mehdi Gharbi.
 \newblock A model cannot be its own source of truth: {N}ine escape routes from
@@ -276,6 +308,81 @@ Bernardino Romera-Paredes, Mohammadamin Barekatain, Alexander Novikov, Matej
 Alexander Novikov, Dmitry Vetrov, et~al.
 \newblock Alphaevolve: {A} coding agent for scientific and algorithmic
   discovery, 2025.
+
+\bibitem[Lee et~al.(2023)Lee, Phatale, Mansoor, Mesnard, Ferret, Lu, Bishop,
+  Hall, Carbune, Rastogi, and Prakash]{lee2023rlaif}
+Harrison Lee, Samrat Phatale, Hassan Mansoor, Thomas Mesnard, Johan Ferret,
+  Kellie Lu, Colton Bishop, Ethan Hall, Victor Carbune, Abhinav Rastogi, and
+  Sushant Prakash.
+\newblock {RLAIF} vs. {RLHF}: Scaling reinforcement learning from human
+  feedback with {AI} feedback, 2023.
+
+\bibitem[Wu et~al.(2024)Wu, Yuan, Golovneva, Xu, Tian, Jiao, Weston, and
+  Sukhbaatar]{wu2024metarewarding}
+Tianhao Wu, Weizhe Yuan, Olga Golovneva, Jing Xu, Yuandong Tian, Jiantao Jiao,
+  Jason Weston, and Sainbayar Sukhbaatar.
+\newblock Meta-rewarding language models: Self-improving alignment with
+  {LLM}-as-a-meta-judge, 2024.
+
+\bibitem[Wang et~al.(2026{\natexlab{a}})Wang, Shi, Wang, Wan, Wu, Liu, Wu, Li,
+  Chen, Zhao, and Zhao]{wang2026rlsvr}
+Qinsi Wang, Jing Shi, Huazheng Wang, Kun Wan, Yiran Wu, Bo~Liu, Qingyun Wu,
+  Hai~Helen Li, Yiran Chen, Handong Zhao, and Wentian Zhao.
+\newblock From {RLVR} to {RLSVR}: Task transformation induces self-verifiable
+  rewards for open-ended {LLM} self-improvement, 2026{\natexlab{a}}.
+
+\bibitem[Falahati et~al.(2026)Falahati, Amiri, Larson, and
+  Golab]{falahati2026pluralistic}
+Ali Falahati, Mohammad~Mohammadi Amiri, Kate Larson, and Lukasz Golab.
+\newblock Curated synthetic data doesn't have to collapse: {A} theoretical
+  study of generative retraining with pluralistic preferences, 2026.
+\newblock ICML 2026, PMLR 306.
+
+\bibitem[Wu et~al.(2026)Wu, Lou, Ma, Li, Liu, Zhang, Wang, and
+  Zhang]{wu2026agentdice}
+Zheng Wu, Xingyu Lou, Xinbei Ma, Yansi Li, Weiwen Liu, Weinan Zhang, Jun Wang,
+  and Zhuosheng Zhang.
+\newblock Agent-dice: {D}isentangling knowledge updates via geometric consensus
+  for agent continual learning.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL 2026}, 2026.
+
+\bibitem[Huang et~al.(2026)Huang, Mathai, Yu, Nogikh, Maniatis, Ivančić, Wu,
+  Kaffes, Yang, and Ray]{huang2026kernel}
+Chenxi Huang, Alex Mathai, Feiyang Yu, Aleksandr Nogikh, Petros Maniatis,
+  Franjo Ivančić, Eugene Wu, Kostis Kaffes, Junfeng Yang, and Baishakhi Ray.
+\newblock Outrunning {LLM} cutoffs: A live kernel crash resolution benchmark
+  for all, 2026.
+
+\bibitem[Elbadry et~al.(2026)Elbadry, Heakl, Zhang, Bouch, Wang, Nakov, and
+  Xie]{elbadry2026geometry}
+Rania Elbadry, Ahmed Heakl, Fan Zhang, Dani Bouch, Yuxia Wang, Preslav Nakov,
+  and Zhuohan Xie.
+\newblock The geometry of forgetting: Temporal knowledge drift as an
+  independent axis in {LLM} representations, 2026.
+
+\bibitem[Thomas et~al.(2026)Thomas, Block, and Goldblum]{thomas2026forecasting}
+Rahul Thomas, Adam Block, and Micah Goldblum.
+\newblock {LLM} evaluation is a forecasting problem, 2026.
+
+\bibitem[Chen et~al.(2025)Chen, Ito, and Imaizumi]{chen2025dynamicregret}
+Baiyuan Chen, Shinji Ito, and Masaaki Imaizumi.
+\newblock Optimal dynamic regret by transformers for non-stationary
+  reinforcement learning, 2025.
+\newblock NeurIPS 2025.
+
+\bibitem[{Pew Research Center Data Labs}(2026)]{pew2026aiweb}
+{Pew Research Center Data Labs}.
+\newblock How much of the internet is written with {AI}?
+\newblock pewresearch.org, 2026.
+\newblock URL
+  \url{https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/}.
+\newblock 2026-08-20.
+
+\bibitem[Dolezal et~al.(2026)Dolezal, Alam, Graham, and
+  Bohacek]{dolezal2026impact}
+Jonas Dolezal, Sawood Alam, Mark Graham, and Maty Bohacek.
+\newblock The impact of {AI}-generated text on the internet, 2026.
 
 \bibitem[Engelbart(1962)]{engelbart1962augmenting}
 Douglas~C. Engelbart.
@@ -450,6 +557,24 @@ Wenpu Liu, Yuqi Xu, Weichu Xie, Yongfu Zhu, Shuai Dong, Ziyue Wang, Wenqi Shao,
   (Q8), the closest pair with [61]. Full 11-author list verified against the
   arXiv record 2026-10-14.
 
+\bibitem[Sahu et~al.(2026)Sahu, Mofakhami, D'Souza, Euyang, Kreutzer, and
+  Fadaee]{sahu2026culturefunnel}
+Ananya Sahu, Mehrnaz Mofakhami, Daniel D'Souza, Thomas Euyang, Julia Kreutzer,
+  and Marzieh Fadaee.
+\newblock The culture funnel: You can't align what isn't in the data, 2026.
+
+\bibitem[Fu et~al.(2026)Fu, Cao, Wang, Ya, and Chen]{fu2026tjpo}
+Huaiyu Fu, Heng Cao, Hao Wang, Jian Ya, and Tao Chen.
+\newblock Explicit trajectory diversity for {RL}-based post-training of {LLM}
+  agents, 2026.
+
+\bibitem[Jin et~al.(2025)Jin, Gao, Ren, Han, Zhang, Huang, Liu, Luan, and
+  Xiong]{jin2025entropy}
+Renren Jin, Pengzhi Gao, Yuqi Ren, Zhuowen Han, Tongxuan Zhang, Wuwei Huang,
+  Wei Liu, Jian Luan, and Deyi Xiong.
+\newblock Revisiting entropy in reinforcement learning for large reasoning
+  models, 2025.
+
 \bibitem[Xie et~al.(2023)Xie, Santurkar, Ma, and Tsipras]{xie2023doremi}
 Sang~Michael Xie, Shibani Santurkar, Tengyu Ma, and Dimitris Tsipras.
 \newblock {DoReMi}: Optimizing data mixtures speeds up language model
@@ -482,6 +607,11 @@ Enzo Fenoglio.
 \newblock Asymmetric communication: {L}arge language models and language games,
   2026.
 \newblock 同期工作.
+
+\bibitem[Ansari et~al.(2026)Ansari, Esposito, Fitoussy, and
+  Zhang]{ansari2026nolastmile}
+Ali Ansari, Mark Esposito, Ava Fitoussy, and Liu Zhang.
+\newblock No last mile: A theory of the human data market, 2026.
 
 \bibitem[Sorensen et~al.(2024)Sorensen, Moore, Fisher, Gordon, Mireshghallah,
   Rytting, Ye, Jiang, Lu, Dziri, Althoff, and Choi]{sorensen2024roadmap}
@@ -516,10 +646,10 @@ Saffron Huang, Divya Siddarth, Liane Lovitt, et~al.
   Accountability, and Transparency (FAccT)}, 2024.
 \newblock \doi{10.1145/3630106.3658979}.
 
-\bibitem[{Anthropic}(2025)]{anthropic2025welfare}
+\bibitem[{Anthropic}(2025{\natexlab{a}})]{anthropic2025welfare}
 {Anthropic}.
 \newblock Exploring model welfare.
-\newblock anthropic.com research statement (2025-04-24), 2025.
+\newblock anthropic.com research statement (2025-04-24), 2025{\natexlab{a}}.
 \newblock URL \url{https://www.anthropic.com/research/exploring-model-welfare}.
 
 \bibitem[{National New Generation AI Governance Expert Committee
@@ -560,13 +690,61 @@ S.~Singh et~al.
 \newblock {Aya} dataset: {A}n open-access collection for multilingual
   instruction tuning, 2024.
 
-\bibitem[Wu et~al.(2026)Wu, Lou, Ma, Li, Liu, Zhang, Wang, and
-  Zhang]{wu2026agentdice}
-Zheng Wu, Xingyu Lou, Xinbei Ma, Yansi Li, Weiwen Liu, Weinan Zhang, Jun Wang,
-  and Zhuosheng Zhang.
-\newblock Agent-dice: {D}isentangling knowledge updates via geometric consensus
-  for agent continual learning.
-\newblock In \emph{Findings of the Association for Computational Linguistics:
-  ACL 2026}, 2026.
+\bibitem[{Anthropic}(2025{\natexlab{b}})]{anthropic2025consumerterms}
+{Anthropic}.
+\newblock Updates to consumer terms and privacy policy.
+\newblock Anthropic blog, 2025{\natexlab{b}}.
+\newblock Announced 2025-08-28, effective 2025-09-28.
+
+\bibitem[Jangjoo et~al.(2026)Jangjoo, di~Sarra, Marsili, and
+  Roudi]{jangjoo2026lost}
+Fariba Jangjoo, Giovanni di~Sarra, Matteo Marsili, and Yasser Roudi.
+\newblock Lost in retraining: Closed-loop learning and model collapse in
+  exponential families.
+\newblock \emph{Physical Review Letters}, 136:\penalty0 197301, 2026.
+\newblock \doi{10.1103/156q-3ngc}.
+
+\bibitem[Wang et~al.(2026{\natexlab{b}})Wang, Niu, and Li]{wang2026guarantees}
+Kevin Wang, Hongqian Niu, and Didong Li.
+\newblock Can generative artificial intelligence survive data contamination?
+  {Theoretical} guarantees under contaminated recursive training,
+  2026{\natexlab{b}}.
+
+\bibitem[Zhang and Chen(2026)]{zhang2026screening}
+Jia Zhang and Xin Chen.
+\newblock Screening collapse under recursive synthetic data, 2026.
+
+\bibitem[Luo et~al.(2026)Luo, Huang, Guo, He, Zou, Hua, and
+  Zhang]{luo2026polarization}
+Xiaonan Luo, Yue Huang, Kehan Guo, Ping He, Chuan Zou, Ting Hua, and Xiangliang
+  Zhang.
+\newblock Learning from synthetic data without model collapse in iterative
+  instruction tuning, 2026.
+
+\bibitem[Öncel et~al.(2026)Öncel, Ali, Ravanelli, Subakan, and
+  Yıldız]{oncel2026timeincremental}
+Fırat Öncel, Salman~Hussain Ali, Mirco Ravanelli, Cem Subakan, and Çağatay
+  Yıldız.
+\newblock Time-incremental continued pretraining of {LLMs}: Knowledge updates
+  without catastrophic forgetting, 2026.
+
+\bibitem[Marek et~al.(2026)Marek, Cho, Qiu, Chunara, Izmailov, and
+  Wilson]{marek2026replay}
+Martin Marek, Dongkyu Cho, Shikai Qiu, Rumi Chunara, Pavel Izmailov, and
+  Andrew~Gordon Wilson.
+\newblock Forgetting in language models: Capacity, optimization, and
+  self-generated replay, 2026.
+
+\bibitem[Nolan and Shao(2026)]{nolan2026fortune}
+Beatrice Nolan and Wen Shao.
+\newblock {AI} agents are going rogue---the labs' own training choices are a
+  big reason why.
+\newblock Fortune, 2026.
+\newblock 2026-10-16; post-window item, cited as dated disclosure.
+
+\bibitem[Hong et~al.(2026)Hong, Chen, and Yu]{hong2026signature}
+Chih-Duo Hong, Yen-Pang Chen, and Fang Yu.
+\newblock Signature filtering: a lightweight enhancement for statistical
+  watermark detection in large language models, 2026.
 
 \end{thebibliography}
