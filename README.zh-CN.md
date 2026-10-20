@@ -1,12 +1,14 @@
 [English](README.md) | **简体中文**
 
-# 拟合实践，而非作品：人本参照的 AGI 理论
+# 拟合实践，而非作品：AGI 人本拟合论
 
 *Yugui Yu · YYG Strategy Lab · they4897@gmail.com*
 
 **[阅读论文（PDF）](paper.pdf) · [LaTeX 源码](paper.tex) · [图件](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)**
 
 ## 理论一句话
+
+《拟合实践，而非作品》提出 **AGI 人本拟合论**（human-referential fitting theory——一种以人为参照的 AGI 理论）：
 
 拟合对象不是人类的作品，而是人类的实践——经验的**全谱**与**全程**；**存量有墙，流量无墙。**
 
@@ -31,13 +33,13 @@
 
 一句话结果：**话题被触及，轴线从未被命名。**
 
-本文建立在此前实证审计之上：[《成功给方向，失败给精度》（DOI 10.5281/zenodo.23355929）](https://doi.org/10.5281/zenodo.23355929)。实践流数据的工程协议为未来工作。
+本文建立在此前实证审计之上：[《成功给方向，失败给精度》（DOI 10.5281/zenodo.23355929）](https://doi.org/10.5281/zenodo.23355929)。实践流数据的工程方法论见姊妹篇《拟合实践：前沿模型训练的数据方法论——附 2026 旗舰管线就绪度审计》（[GitHub: practice-fitting-methodology](https://github.com/yuyuguilab/practice-fitting-methodology)）。
 
 ## 仓库结构
 
 ```
 paper.pdf / paper.tex / paper.bbl   # 英文论文（编译产物 + 源码）
-references.bib                      # 79 条编号参考文献
+references.bib                      # 107 条编号参考文献
 figures/                            # 图1 理论框架、图2 证据地图、图3 立场×维度热图（300dpi）
 analysis/coding_data.py             # 全部 80 条编码记录 + 可复现表格/图件
 analysis/corpus_v1.csv              # 完整编码语料（80 篇 × 24 字段）

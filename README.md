@@ -33,13 +33,13 @@ To make the theory auditable, we coded a purposefully sampled corpus of **N = 80
 
 The one-line result: **the topic is touched; the axis is never named.**
 
-This paper builds on a prior empirical audit: [Success Provides Direction, Failure Provides Precision (DOI 10.5281/zenodo.23355929)](https://doi.org/10.5281/zenodo.23355929). Engineering protocols for practice-flow data are future work.
+This paper builds on a prior empirical audit: [Success Provides Direction, Failure Provides Precision (DOI 10.5281/zenodo.23355929)](https://doi.org/10.5281/zenodo.23355929). The engineering methodology for practice-flow data is the companion paper *Fitting the Practice: A Data Methodology for Frontier Model Training, with a Readiness Audit of 2026 Flagship Pipelines* ([GitHub: practice-fitting-methodology](https://github.com/yuyuguilab/practice-fitting-methodology)).
 
 ## Repository Structure
 
 ```
 paper.pdf / paper.tex / paper.bbl   # English manuscript (compiled + source)
-references.bib                      # 79 numbered references
+references.bib                      # 107 numbered references
 figures/                            # Fig 1 theory framework, Fig 2 evidence map,
                                     # Fig 3 stance x dimension heatmap (300 dpi)
 analysis/coding_data.py             # All 80 coded records + reproducible tables/figures
