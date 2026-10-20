@@ -15,7 +15,7 @@ The object of fitting is not humanity's works but its practice — the full spec
 Three connected claims:
 
 1. **Concept** — AGI is a philosophical concept: as long as "generality" is referenced to the open set of human practice, it cannot be reduced to a technical specification.
-2. **Implementation** — the means of AGI is *practice-fitting* (the regenerating flow: telemetry, interaction, failure, repair), not *corpus-fitting* (the finite stock of accumulated works bounded by the data wall).
+2. **Implementation** — the means of AGI is *practice-fitting* (the regenerating flow: telemetry, interaction, failure, repair), not *corpus-fitting* (the finite stock of accumulated works bounded by the data wall). The latter is the first stage and permanent substrate of the former: the stock is a projection of practice, and the wall bounds its future without negating its past.
 3. **Position** — AGI should be built and governed as an **augmentative tool, not a new subject**: fitting is the means, augmenting humans is the end.
 
 ## The evidence map in numbers
