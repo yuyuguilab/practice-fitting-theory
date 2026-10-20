@@ -8,6 +8,8 @@
 
 ## The theory in one sentence
 
+*Fitting the Practice, Not the Works* states the **human-referential fitting theory of AGI** (AGI 人本拟合论):
+
 The object of fitting is not humanity's works but its practice — the full spectrum and the full course of human experience; **the stock has a wall; the flow does not.**
 
 Three connected claims:
