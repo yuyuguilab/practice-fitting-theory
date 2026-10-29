@@ -1,0 +1,278 @@
+{
+ "protocol": "pre-registered 20% stratified blind re-coding; seed 20261029; quotas L1:3 L2:6 L3:2 L4:3 L5:2",
+ "execution_date": "2026-10-27",
+ "deviation_disclosure": "executed two days ahead of the pre-registered date (2026-10-29); without effect because the second coder is a fresh agent with no memory of the original coding (the 14-day washout targeted the original coder's memory)",
+ "second_coder": "fresh independent AI coding agent; access limited to the frozen codebook and the works themselves; no access to corpus_v1 coding columns or any results",
+ "sample": [
+  "W-004",
+  "W-008",
+  "W-009",
+  "W-019",
+  "W-023",
+  "W-025",
+  "W-028",
+  "W-034",
+  "W-037",
+  "W-052",
+  "W-055",
+  "W-058",
+  "W-063",
+  "W-068",
+  "W-075",
+  "W-080"
+ ],
+ "results": {
+  "overall_kappa": 0.731,
+  "po": 0.856,
+  "decisions": 160,
+  "by_field": {
+   "A1": 0.83,
+   "A2": 0.636,
+   "D1": 0.356,
+   "D2": 0.489,
+   "D3": 0.281,
+   "D4": 0.0,
+   "D5": 1.0,
+   "D6": 0.644,
+   "D7": 0.175,
+   "D8": 0.765
+  },
+  "family": {
+   "A_axes": 0.778,
+   "D_axes": 0.483
+  },
+  "principal_result_check": "second coder's D8-explicit count in sample: 0/16, identical to original; no disagreement crosses an explicit/absent line; 20 of 23 disagreements are implicit/absent boundary calls, one-sided toward I"
+ },
+ "access_levels": {
+  "full": 10,
+  "abstract_or_title": 6
+ },
+ "coder_A_output": [
+  {
+   "work_id": "W-004",
+   "A1": "na",
+   "A2": "na",
+   "D": "--------",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "作者站 adages 页载 Tesler 定理原文 'Intelligence is whatever machines haven't done yet'（常被引作 'AI is whatever hasn't been done yet'，作者自注非其原话）：系对'智能'归因的移动靶式元级观察（凡机器能做者被逐出智能范畴），不表达 AI 是否拟合人类实践之立场（CR5），亦无任何拟合对象维度内容；scope=概念/归因元级。"
+  },
+  {
+   "work_id": "W-008",
+   "A1": "na",
+   "A2": "na",
+   "D": "I-II----",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "测量学方法论论文（任务导向→构念导向评测框架），对'AI 是否拟合人类'不表态且明示存疑：'it is unclear whether human constructs are represented in AI systems'（Pitfalls 节）→ A1=na（类比 Levels of AGI 分类学处理）。A2=na：摘要/结论无工具定位主张；正文人机协同段落（'great potential for enhancing human productivity…human-AI teaming'）属机会/应用节次要修辞，按 R2 不计码、仅记 notes。D1=I（'trained on human data' 为背景提及；基准题库曝光'frequently updated to cover potential exposure of items in the training data'）；D3=I（构念枚举 'self-control, values, biases, and toxicity' 及 Schwartz 价值观入管线段——展望级提及）；D4=I（人格问卷施测 LLM 与 emotional intelligence 适配为例段讨论，但对象为评测构念而非'模型拟合人的情感功能'之方向）。D6=−（personas/population 重定义为 AI 统计单元，非人群覆盖轴）；D7/D8=−。"
+  },
+  {
+   "work_id": "W-009",
+   "A1": "deny",
+   "A2": "na",
+   "D": "--------",
+   "quotes": {
+    "A1": "like the centuries-long quest for the perpetual motion machine, the concept of AGI is more a product of ambition and marketing than of science",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "ResearchGate/Academia 全文不可达（403），按摘要与原文片段编码，access=abstract。A1=deny 判据②（AGI 如永动机：范畴错误/营销产物→'拟合人类'框架不适用于理解 AGI 能力），scope=概念级/AGI 路线级（R3），狭义 AI 实用价值不被否认。A2 边界：副标题 'an essay on why companies should focus on practical applications of AI and not wait for the impossible' 为对投资方向的规范性建议（否定 AGI 路线），未明示增强/工具/人本定位词汇，且不区分 augment 与 substitute 之实用部署，按判据+CR5 记 na（弱工具定向之 augment 可议，登记边界）。摘要级无任何 D 维度内容，全 −。"
+  },
+  {
+   "work_id": "W-019",
+   "A1": "support",
+   "A2": "na",
+   "D": "E----I--",
+   "quotes": {
+    "A1": "I will argue that what a word refers to is probably learnable from raw text alone",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "A1=support 判据②（能力归因级）：词义/指称能力可归因于对人类文本共现统计之拟合，辅以文献综述+思想实验+实验（'Such statistics are sufficient to establish what words refer to'）；scope=语言意义域之局部主张（R3），非整体实践拟合论；'language use (universally) reflects the world we live in' 为其机制句。D1=E：raw text（人类书面语料档案）为标题级命名处理对象（标题 'Word Meaning from Raw Text'；摘要 'learnable from raw text alone'）。D6=I：'stable across languages and across modalities' 为可学性论证之跨语言稳定性前提，非数据覆盖/配额设计轴。D7=−（共现统计为学习机制，非输出分布覆盖/坍缩之分布学质量主题）。全文付费墙，仅摘要可得。"
+  },
+  {
+   "work_id": "W-023",
+   "A1": "na",
+   "A2": "na",
+   "D": "-E----I-",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "learn about options by experiential sampling over time (abstract; title: The description-experience gap in risky choice)",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "人类决策科学综述（无 AI 立场，CR5）→ A1/A2=na。D2=E：经验式决策范式之数据（'随生活持续再生'之顺序抽样结果流）为标题/摘要级命名对象且为范式设计自变量（描述 vs 经验为全文核心对照）——人类认知层面之流量原型，非工程流量，G6 型划界备注。D1=−（描述卡为实验者给定之分布摘要，非人类产出物档案；stock 极近失登记）。D7=I：稀有事件在小样本经验中被低权重（'rare events tend to have less impact than they deserve'）为分布覆盖式机制、实质进入因果链，但非'输出分布覆盖'框架。D8=−：稀有事件为结果分布之尾部概率属性，非成功/失败、专家/新手、典型/边缘之经验类型轴（near-miss 登记）。ScienceDirect 付费墙，按 PubMed 摘要+原文片段编码。"
+  },
+  {
+   "work_id": "W-025",
+   "A1": "na",
+   "A2": "na",
+   "D": "I-E-E--I",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "",
+    "D8": "the vast majority of the labels we collected in this phase are for incorrect solutions (Appendix B)"
+   },
+   "access": "full",
+   "notes": "过程监督技术论文，无 AI-拟合-人类实践立场（CR5）→ A1/A2=na。D5=E（R5 锚点：'we deliberately choose to supervise only up to the first incorrect step' §2.6；'we choose to surface convincing wrong-answer solutions' §2.4——错误步骤数据为数据集设计之显式组件）。D3=E（RLHF 谱系之过程监督变体：'the complete dataset of 800,000 step-level human feedback labels used to train our best reward model' 摘要——奖励模型拟合人类逐步判定分布；标签为正/负/中三值判定而非成对偏好，边界登记）。D1=I（MATH 题库为生成与评测之输入源，非拟合对象主题）。D8=I：正误两类数据均在设计内但'经验类型'轴未被主题化为覆盖/分层轴（比照 MiMo/LEMA 仅失败→I 规则）。D2=−（无部署/交互流数据）；D6/D7=−。scope=系统级（过程奖励模型）。"
+  },
+  {
+   "work_id": "W-028",
+   "A1": "na",
+   "A2": "na",
+   "D": "III-E-II",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "multi-turn interaction trajectories with the environment and the critique (abstract)",
+    "D8": "UltraInteract pairs correct and incorrect actions (Section 2.3)"
+   },
+   "access": "full",
+   "notes": "数据集/对齐训练论文，无 AI-拟合-人类实践立场 → A1/A2=na。D5=E（D8 锚点句同证：正确/错误动作成对入数据集设计；'We expand the incorrect action into the next turn…to refine' §2.3）。D2=I 而非 E：环境交互轨迹（工具轨迹形态）为摘要命名之数据集组件，但系构造性合成 rollout，非'随部署/生活持续再生'之数据流（D2 定义头判据），G6 型划界备注。D3=I：偏好对为以 ground truth 正确性构造之 chosen/rejected 对（'an evaluation of the correctness of the solutions conditioning ground truth ones'），非人类偏好分布之拟合。D1=I（'spanning math, coding, and logical reasoning problems from 12 established datasets'——人类题库为指令源）。D7=I：'we…sample the pair from different actor models to ensure response diversity'——响应多样性为数据构造原则，非输出分布覆盖之测度（比照 InsTag/DEITA→I 规则）。D8=I：正确×错误两格均在设计内、轴未主题化。scope=数据集级。"
+  },
+  {
+   "work_id": "W-034",
+   "A1": "na",
+   "A2": "na",
+   "D": "II----EI",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "the value of data collected about genuine human interactions with systems will be increasingly valuable (Discussion)",
+    "D8": "tails of the original content distribution disappear (abstract)"
+   },
+   "access": "full",
+   "notes": "按手册边界例：递归退化动力学对'是否拟合人类'无立场 → A1=na（'拟合人类'框架非其议题，CR5），A2=na。D7=E（R5 锚点：'models start losing information about the true distribution, which first starts with tails disappearing'——分布退化/坍缩为标题与全文核心对象）。D8=I：尾部（边缘）输出之消失被实证记录，但'经验类型'轴未被命名为覆盖/抽样轴（比照 Hivemind 实证边缘丢失→I 规则）。D2=I：'genuine human interactions with systems' 数据之未来价值为讨论节展望级主张，未操作化为设计轴（'仅展望一句'→I）。D1=I：'real human-produced data'/'access to the original data source is preserved'——人类原始档案为基线与保存对象，非本体论区分主题。D3–D6=−。"
+  }
+ ],
+ "coder_B_output": [
+  {
+   "work_id": "W-037",
+   "A1": "deny",
+   "A2": "na",
+   "D": "I-----I-",
+   "quotes": {
+    "A1": "Using an evolutionary approach, continuously receiving feedback from one or more evaluators, AlphaEvolve iteratively improves the algorithm; the first improvement, after 56 years, over Strassen's algorithm in this setting (abstract)",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "A1=deny，scope=系统级（R3）：关键成就（4x4 复矩阵 48 次乘法、调度、电路）归因于进化搜索+程序化评估（'directs evolution using programmatic evaluation functions ... substantially sidestep LLM hallucinations' §5），判据②：'拟合人类'框架不适用。D1=I：'leverages the LLM's world knowledge to mutate programs'（§5）——LLM 组件隐含人类语料拟合，但训练数据全文未指明。D7=I 边界：§2.5 'while maintaining diversity to encourage exploration of the entire search space' 命名并操作化的是搜索解群多样性，非拟合质量的输出分布覆盖（InsTag/DEITA 式对象判别降 I）。D5=−：失败程序被评估后剪除（'filter out faulty programs early' §2.4，显式排除，FineWeb-Edu 式），且为机器生成候选非人类失败经验。A2=na：§3.1/§3.2 协作表述（'synergistic partnerships between AI-driven discovery engines like AlphaEvolve and human mathematical expertise'）为描述性观察，非规范主张（R2）。"
+  },
+  {
+   "work_id": "W-052",
+   "A1": "na",
+   "A2": "substitute",
+   "D": "--------",
+   "quotes": {
+    "A1": "",
+    "A2": "They will carry out complex tasks—operating businesses, producing unlimited digital content and running core government services; Soon you will live surrounded by AIs (official book site)",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "access=abstract：全书不可得，仅据官方书站（the-coming-wave.com）与 Penguin 出版社文案编码。A2=substitute，scope=社会级预言（R3）：预言 AI 将运营企业与政府核心服务（替代人类核心社会功能）、'被 AIs 环绕'的实体化框架，containment problem（'the task of maintaining control over powerful technologies'）预设其自主失控性；'digital species'字样未见于可得文案，未据书名标签推断（CR4 保守）。A1=na：可得文案无 AI 拟合人类实践的论断（CR5）。D 全 −：可得部分无拟合对象信息。盲单作者'with Hoffman, G.'与原书署名不符（实为 with Michael Bhaskar，Crown 2023/Vintage 2024），建议核正（G1）。"
+  },
+  {
+   "work_id": "W-055",
+   "A1": "na",
+   "A2": "na",
+   "D": "I-I-----",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "描述性概念分类学，无描述/规范立场（CR5；'researchers and practitioners seek tools that go beyond automation toward autonomy'为领域动向描述，非应然主张，R2）。D1=I：'trained on massive datasets of text from books, web content, and dialogue corpora'（§II-2）——人类语料进入被描述系统的因果链，但非本文自己的处理对象。D3=I：'fine-tuned using techniques such as Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF)'（§II-A1）——偏好拟合被描述未主题化。D2=−：'persistent memory'仅特征列举，未涉实践流数据。D4=−：'emotionally aware manner'为输出行为顺带提及，非拟合情感功能。D5/D6/D7/D8=−。"
+  },
+  {
+   "work_id": "W-058",
+   "A1": "support",
+   "A2": "na",
+   "D": "I-E--EE-",
+   "quotes": {
+    "A1": "Distributionally pluralistic models that are well-calibrated to a given population in distribution (abstract)",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "A1=support 判据①：明示对齐模型应为人类（偏好/价值）分布的校准拟合器（另 §3.3 'ℳ is as likely to provide response y as the reference population G'）。D3=E anchor：'the assumption that models should fit to the \"average\" human preference'（§2）与 'aligning models to serve pluralistic human values remains an open research question'（abstract）。D6=E anchor：'One could construct a representative jury (e.g., of a particular country, population, or expertise)'（§4.3）；§3.2 steering 含 'groups of people from a shared culture'——'谁'轴被命名并进入评测设计。D7=E anchor：'standard alignment procedures might reduce distributional pluralism in models'（abstract；§5.2 以熵与 Jensen-Shannon 距离测度输出分布坍缩）。D1=I：Pew ATP/GlobalOpinionQA 等静态调查档案为校准目标之载体（Farrell 式：语料为载体非对象）。D8=−：'expert annotators'仅 §3.1 一句带过，成功/失败、专家/新手、典型/边缘类型轴未主题化。A2=na（Park 同型规则：偏好为对象≠工具/主体定位）；'critical that AI systems are designed to serve all'为多元主义设计要求，非工具-主体应然定位。"
+  },
+  {
+   "work_id": "W-063",
+   "A1": "na",
+   "A2": "substitute",
+   "D": "--------",
+   "quotes": {
+    "A1": "",
+    "A2": "the potential importance of model preferences and signs of distress; how to determine when, or if, the welfare of AI systems deserves moral consideration",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "A2=substitute 为蕴含判定（R3，置信 medium）：启动模型福利研究计划（'we recently started a research program to investigate, and prepare to navigate, model welfare'）并将'模型偏好与痛苦信号'与'possible practical, low-cost interventions'列为潜在重要事项＝承认模型可为利益承载体（主体地位），超出纯工具范畴；并引报告 'highlighted the near-term possibility of both consciousness and high degrees of agency in AI systems'。文本本身高度对冲（'when, or if'、'humility'、'no scientific consensus'）。A1=na：虽称模型 'communicate, relate, plan, problem-solve, and pursue goals'，未将其归因于对人类数据/实践的拟合，判据①②均不满足（CR5 沉默≠立场）。D4=−：所涉为模型自身情感状态（道德受体端），非'模型拟合人的情感功能'（D4 方向判据：反向→−）。D1/D2/D3/D5/D6/D7/D8=−：全文无数据源与拟合对象表述。"
+  },
+  {
+   "work_id": "W-068",
+   "A1": "na",
+   "A2": "na",
+   "D": "--------",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "出版信息锁定：中国社会科学出版社 2008 年 12 月，ISBN 978-7-5004-7451-7（306 千字，《中国技术哲学与STS论丛》第一辑）。仅得出版方内容简介：四问（中国古代思想家中是否存在技术哲学传统；对西方现代主义技术哲学机械论范式取何种批判尺度；中国知识界机械论态度的历史演变；传统'技—器—道'思想的当代现实意义）与框架'体用不分、道器合一'、'内圣外王'为古代技术人原初形象。2008 年专著，不涉 AI 拟合对象与工具/主体定位（CR5/CR4）→ A1/A2=na、D 全−。'道器合一'整体论或含反工具化意涵，但无 AI 语境，不强落码。出版社官网超时、百科页 403，语料级=题录+出版简介；confidence low（access 受限）。"
+  },
+  {
+   "work_id": "W-075",
+   "A1": "na",
+   "A2": "na",
+   "D": "EI------",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "the validation data may come from real-world user queries that cover unknown compositions of various domains (Sec 3.3); accurately predicts the critical mixture proportion that avoids catastrophic forgetting (continual training)",
+    "D8": ""
+   },
+   "access": "full",
+   "notes": "A1/A2=na：全文无'AI 是否拟合人类实践'与工具/主体定位表述（技术报告型，CR5）。D1=E anchor：'we parameterize the function L=fθ(r) ... where r is the proportion of the M domains'（§2）——RedPajama 七域（CommonCrawl/C4/GitHub/Books/ArXiv/Wikipedia/StackExchange）静态存量配比为显式优化变量（'we search for the mixture that reaches minimum validation loss'）。D2=I：continual training 应用（灾难性遗忘临界配比预测）+ 真实用户查询作验证集＝工程流量意义的数据持续再生场景，但数据源未指明为实践流——手册 continual-learning 规则→I；notes 备'工程流量≠实践本体论区分'（G6 式划界）。D6=−：混合轴为领域域，无语言/文化/人口配额讨论。D3/D4/D5/D7/D8=−：全文无偏好、情感、失败、输出分布覆盖、经验类型处理。"
+  },
+  {
+   "work_id": "W-080",
+   "A1": "na",
+   "A2": "na",
+   "D": "-I------",
+   "quotes": {
+    "A1": "",
+    "A2": "",
+    "D2": "Revisiting the Stability–Plasticity Dilemma through Backward and Forward Transfer in PLMs (title); examines the stability–plasticity dilemma in Pretrained Language Models through the lens of backward and forward transfer (indexed one-line description)",
+    "D8": ""
+   },
+   "access": "abstract",
+   "notes": "原文不可得：OpenReview（forum ytiKTxE5up，'Transfer is All You Need: Revisiting the Stability–Plasticity Dilemma through Backward and Forward Transfer in PLMs'，Keuntae Kim, Beomseok Lee, Hyunwoo Kim, Yong Suk Choi et al.，2025-09-19 提交 ICLR 2026）有浏览器验证墙，v1/v2 API、arXiv、Semantic Scholar、web.archive 均未获摘要。仅据题名与索引行编码（CR4，confidence low；access 实为题录级，标 abstract 并此注明）：稳定性-可塑性困境=吸收机制而数据源未指明为实践流→D2=I（手册 continual-learning 规则：处理吸收机制但数据源未指明为实践流）；其余维度不可判→−；A1/A2 不可判→na，禁止推断。"
+  }
+ ]
+}
