@@ -55,7 +55,7 @@ python3 analysis/coding_data.py    # 从内嵌编码记录重建全部表格与�
 tectonic paper.tex                 # 重新编译 PDF（需 references.bib + figures/）
 ```
 
-`analysis/coding_data.py` 中每条编码决策都带有支持引文、来源 URL 与置信层级。所有主张限定于语料内（"该语料内"）；证据地图是目的性样本，不做总体推断。20% 分层盲重编码的 Cohen's κ 已排期于 2026-10-29，将于下一版本报告。
+`analysis/coding_data.py` 中每条编码决策都带有支持引文、来源 URL 与置信层级。所有主张限定于语料内（"该语料内"）；证据地图是目的性样本，不做总体推断。20% 分层盲重编码的 Cohen's 20% 分层盲重编码的 Cohen κ：**总体 0.731**（预注册门槛 0.70）；D8 = 0.765，且 D8-明确计数与原始一致（0/16）。数据与日志：`analysis/kappa_recoding_v1.json`。
 
 ## 引用
 

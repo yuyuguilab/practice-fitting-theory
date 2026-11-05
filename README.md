@@ -56,7 +56,7 @@ python3 analysis/coding_data.py    # regenerates all tables + figures from embed
 tectonic paper.tex                 # rebuild the PDF (requires references.bib + figures/)
 ```
 
-Every coding decision in `analysis/coding_data.py` carries its supporting quotation, source URL, and confidence tier. All claims are bounded to the corpus ("within this corpus"); the map is a purposeful sample, not a population inference. Cohen's κ from a 20% stratified blind re-coding is scheduled for 2026-10-29 and will be reported in the next version.
+Every coding decision in `analysis/coding_data.py` carries its supporting quotation, source URL, and confidence tier. All claims are bounded to the corpus ("within this corpus"); the map is a purposeful sample, not a population inference. Cohen's κ from a 20% stratified blind re-coding: **0.731 overall** (pre-registered threshold 0.70); D8 = 0.765, with the D8-explicit count matching the original (0/16). Data and logs: `analysis/kappa_recoding_v1.json`.
 
 ## Citation
 
