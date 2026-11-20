@@ -2,7 +2,7 @@
 
 # 拟合实践，而非作品：AGI 人本拟合论
 
-*Yugui Yu · YYG Strategy Lab · they4897@gmail.com*
+*余玉桂 · 余玉桂战略研究室 · they4897@gmail.com*
 
 **[阅读论文（PDF）](paper.pdf) · [LaTeX 源码](paper.tex) · [图件](figures/) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23391808.svg)](https://doi.org/10.5281/zenodo.23391808)**
 
@@ -84,4 +84,4 @@ tectonic paper.tex                 # 重新编译 PDF（需 references.bib + fig
 
 ## 联系
 
-Yugui Yu · YYG Strategy Lab · they4897@gmail.com
+余玉桂 · 余玉桂战略研究室 · they4897@gmail.com
